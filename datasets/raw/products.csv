@@ -1,0 +1,501 @@
+product_id,product_name,category,brand,price,stock
+PROD0001,ReadMore Velit Electronics,Sports,ReadMore,15435.06,324
+PROD0002,TechPro Quos Books,Fashion,TechPro,13299.71,244
+PROD0003,HomeEase Sint Fashion,Fashion,UrbanStyle,9595.66,85
+PROD0004,UrbanStyle Repellat Fashion,Books,FitZone,9817.24,70
+PROD0005,ReadMore Quia Electronics,Sports,UrbanStyle,13975.09,268
+PROD0006,ReadMore Ducimus Books,Accessories,FitZone,3699.46,492
+PROD0007,FitZone Sunt Electronics,Fashion,ReadMore,9803.41,179
+PROD0008,FitZone Praesentium Beauty,Accessories,GlowCare,11284.44,278
+PROD0009,TechPro Quia Electronics,Accessories,FitZone,24631.12,148
+PROD0010,TechPro A Fashion,Beauty,TechPro,8915.43,5
+PROD0011,UrbanStyle Distinctio Sports,Fashion,GlowCare,16185.2,147
+PROD0012,FitZone Adipisci Electronics,Electronics,ReadMore,3607.04,331
+PROD0013,FitZone Itaque Fashion,Books,TechPro,1823.0,167
+PROD0014,ReadMore Voluptas Books,Fashion,GlowCare,21814.11,8
+PROD0015,ReadMore Quod Sports,Electronics,FitZone,18321.96,177
+PROD0016,GlowCare Nihil Fashion,Home & Kitchen,FitZone,8073.3,283
+PROD0017,GlowCare Reiciendis Sports,Electronics,TechPro,12713.04,394
+PROD0018,HomeEase Laboriosam Accessories,Electronics,HomeEase,3565.59,115
+PROD0019,TechPro A Accessories,Beauty,FitZone,17737.28,95
+PROD0020,UrbanStyle Perspiciatis Books,Beauty,HomeEase,1943.27,330
+PROD0021,GlowCare Earum Home & Kitchen,Books,GlowCare,18974.18,343
+PROD0022,HomeEase Ea Fashion,Beauty,HomeEase,13761.09,55
+PROD0023,UrbanStyle Corrupti Accessories,Electronics,TechPro,7114.77,206
+PROD0024,HomeEase Inventore Electronics,Sports,UrbanStyle,21591.71,104
+PROD0025,TechPro Nisi Beauty,Beauty,UrbanStyle,24654.57,34
+PROD0026,TechPro Explicabo Home & Kitchen,Beauty,TechPro,6507.11,208
+PROD0027,HomeEase Voluptatem Sports,Electronics,UrbanStyle,20194.71,280
+PROD0028,HomeEase Fugit Accessories,Home & Kitchen,TechPro,18803.87,368
+PROD0029,TechPro Repudiandae Books,Home & Kitchen,FitZone,18730.06,354
+PROD0030,GlowCare Eligendi Sports,Fashion,HomeEase,23939.4,146
+PROD0031,TechPro Sunt Beauty,Books,UrbanStyle,12267.59,488
+PROD0032,TechPro Natus Sports,Home & Kitchen,FitZone,16919.04,286
+PROD0033,HomeEase Velit Accessories,Beauty,UrbanStyle,20631.98,80
+PROD0034,ReadMore Sed Sports,Sports,GlowCare,12091.98,49
+PROD0035,HomeEase Recusandae Sports,Fashion,TechPro,12138.98,86
+PROD0036,UrbanStyle Recusandae Books,Books,TechPro,8101.96,190
+PROD0037,TechPro Magnam Electronics,Sports,FitZone,19564.26,302
+PROD0038,ReadMore Consequatur Fashion,Sports,GlowCare,17217.34,0
+PROD0039,HomeEase Modi Electronics,Beauty,HomeEase,11387.72,380
+PROD0040,UrbanStyle Optio Accessories,Electronics,GlowCare,10598.97,441
+PROD0041,TechPro Soluta Beauty,Electronics,GlowCare,1999.3,137
+PROD0042,HomeEase Eius Beauty,Electronics,ReadMore,360.23,135
+PROD0043,ReadMore Exercitationem Accessories,Home & Kitchen,HomeEase,13316.1,361
+PROD0044,HomeEase Itaque Fashion,Electronics,HomeEase,10553.24,380
+PROD0045,HomeEase Aperiam Home & Kitchen,Books,GlowCare,19941.51,153
+PROD0046,UrbanStyle Labore Books,Beauty,UrbanStyle,13657.36,161
+PROD0047,HomeEase Magnam Books,Home & Kitchen,ReadMore,23430.25,18
+PROD0048,ReadMore Optio Books,Books,UrbanStyle,5063.49,461
+PROD0049,TechPro Excepturi Sports,Electronics,GlowCare,24755.72,327
+PROD0050,ReadMore Quibusdam Fashion,Books,UrbanStyle,7587.69,242
+PROD0051,FitZone Iusto Books,Sports,HomeEase,16131.76,128
+PROD0052,UrbanStyle Possimus Fashion,Beauty,HomeEase,12645.47,175
+PROD0053,GlowCare Eum Beauty,Beauty,UrbanStyle,9116.85,408
+PROD0054,HomeEase Non Books,Books,HomeEase,3654.01,279
+PROD0055,ReadMore Ratione Sports,Fashion,TechPro,3543.02,430
+PROD0056,UrbanStyle Ad Books,Beauty,HomeEase,17845.06,83
+PROD0057,HomeEase Voluptas Accessories,Sports,GlowCare,9564.88,375
+PROD0058,TechPro Autem Fashion,Beauty,FitZone,24040.15,221
+PROD0059,TechPro Corporis Accessories,Fashion,UrbanStyle,8275.41,324
+PROD0060,HomeEase Recusandae Beauty,Beauty,ReadMore,24591.37,450
+PROD0061,HomeEase Deserunt Electronics,Accessories,UrbanStyle,5293.7,415
+PROD0062,UrbanStyle Eveniet Sports,Beauty,HomeEase,2748.9,144
+PROD0063,ReadMore Neque Home & Kitchen,Fashion,HomeEase,7951.04,444
+PROD0064,UrbanStyle Aperiam Books,Accessories,FitZone,22162.39,105
+PROD0065,GlowCare Enim Beauty,Accessories,FitZone,13141.45,324
+PROD0066,ReadMore Omnis Beauty,Beauty,ReadMore,3563.26,10
+PROD0067,UrbanStyle Neque Home & Kitchen,Books,GlowCare,5221.18,165
+PROD0068,UrbanStyle Quibusdam Fashion,Home & Kitchen,TechPro,7918.58,195
+PROD0069,ReadMore Aut Sports,Accessories,GlowCare,14835.73,230
+PROD0070,FitZone Corporis Home & Kitchen,Books,ReadMore,8442.33,146
+PROD0071,ReadMore Vero Sports,Beauty,UrbanStyle,18726.69,358
+PROD0072,GlowCare Quo Sports,Electronics,HomeEase,15483.7,237
+PROD0073,GlowCare Nulla Home & Kitchen,Electronics,GlowCare,21870.7,496
+PROD0074,UrbanStyle Deleniti Fashion,Home & Kitchen,HomeEase,12623.35,470
+PROD0075,FitZone Est Beauty,Accessories,HomeEase,8412.51,400
+PROD0076,TechPro Error Accessories,Beauty,GlowCare,24907.53,12
+PROD0077,TechPro Esse Accessories,Sports,GlowCare,9019.06,218
+PROD0078,TechPro Maxime Fashion,Accessories,FitZone,10828.77,256
+PROD0079,ReadMore Consequatur Fashion,Beauty,ReadMore,20266.16,1
+PROD0080,ReadMore Amet Beauty,Electronics,ReadMore,2397.27,209
+PROD0081,FitZone Facere Electronics,Fashion,TechPro,9784.34,483
+PROD0082,GlowCare Accusamus Beauty,Home & Kitchen,FitZone,2324.7,364
+PROD0083,FitZone Repudiandae Beauty,Fashion,TechPro,3653.92,224
+PROD0084,FitZone Nemo Home & Kitchen,Sports,GlowCare,314.1,483
+PROD0085,FitZone Cumque Accessories,Beauty,ReadMore,435.71,193
+PROD0086,TechPro Hic Books,Sports,ReadMore,9630.52,195
+PROD0087,ReadMore Temporibus Electronics,Fashion,TechPro,20267.07,399
+PROD0088,ReadMore Repudiandae Sports,Beauty,UrbanStyle,14757.3,259
+PROD0089,HomeEase Odio Accessories,Accessories,FitZone,15945.5,56
+PROD0090,ReadMore Eos Home & Kitchen,Books,FitZone,13076.9,456
+PROD0091,TechPro Consectetur Home & Kitchen,Books,FitZone,20530.69,112
+PROD0092,GlowCare Laboriosam Fashion,Accessories,ReadMore,22033.27,212
+PROD0093,GlowCare Ex Electronics,Sports,HomeEase,21273.42,278
+PROD0094,ReadMore Similique Books,Books,ReadMore,20340.69,243
+PROD0095,HomeEase Cumque Sports,Books,HomeEase,4730.47,379
+PROD0096,UrbanStyle Consectetur Sports,Electronics,ReadMore,14927.72,116
+PROD0097,TechPro Explicabo Accessories,Books,GlowCare,14637.23,385
+PROD0098,ReadMore Sapiente Home & Kitchen,Electronics,ReadMore,13292.54,450
+PROD0099,ReadMore Quidem Sports,Home & Kitchen,GlowCare,12123.64,86
+PROD0100,FitZone Suscipit Fashion,Electronics,HomeEase,2410.52,409
+PROD0101,UrbanStyle Excepturi Home & Kitchen,Electronics,FitZone,2732.75,380
+PROD0102,UrbanStyle Aperiam Sports,Fashion,HomeEase,22576.49,366
+PROD0103,FitZone Pariatur Electronics,Electronics,TechPro,15828.25,262
+PROD0104,FitZone Voluptas Home & Kitchen,Electronics,FitZone,6704.73,483
+PROD0105,GlowCare Harum Electronics,Fashion,ReadMore,7125.93,299
+PROD0106,TechPro Quis Home & Kitchen,Electronics,ReadMore,15332.44,416
+PROD0107,HomeEase Doloremque Fashion,Books,ReadMore,10291.39,112
+PROD0108,TechPro Unde Fashion,Accessories,ReadMore,11144.28,447
+PROD0109,FitZone Voluptatem Electronics,Electronics,ReadMore,1703.18,163
+PROD0110,TechPro Ab Books,Home & Kitchen,HomeEase,3639.87,3
+PROD0111,GlowCare Porro Accessories,Electronics,GlowCare,9954.48,117
+PROD0112,TechPro Esse Accessories,Electronics,HomeEase,17551.92,22
+PROD0113,FitZone Neque Accessories,Home & Kitchen,UrbanStyle,1390.08,408
+PROD0114,UrbanStyle Iure Fashion,Accessories,HomeEase,8496.37,232
+PROD0115,ReadMore Consequuntur Beauty,Fashion,FitZone,17437.48,89
+PROD0116,FitZone Commodi Fashion,Books,ReadMore,19842.65,475
+PROD0117,HomeEase Provident Sports,Accessories,HomeEase,4916.66,254
+PROD0118,FitZone Reprehenderit Beauty,Electronics,GlowCare,18340.61,91
+PROD0119,UrbanStyle Eum Sports,Books,ReadMore,23894.17,468
+PROD0120,ReadMore Repellat Books,Sports,TechPro,22688.85,457
+PROD0121,UrbanStyle Hic Books,Books,UrbanStyle,19776.32,154
+PROD0122,HomeEase A Beauty,Fashion,FitZone,17865.41,306
+PROD0123,ReadMore Nobis Books,Fashion,GlowCare,6030.67,114
+PROD0124,HomeEase Voluptatem Beauty,Accessories,UrbanStyle,15920.43,206
+PROD0125,FitZone Laudantium Beauty,Electronics,HomeEase,16152.84,80
+PROD0126,TechPro Magnam Fashion,Home & Kitchen,UrbanStyle,10288.58,102
+PROD0127,UrbanStyle Odio Electronics,Fashion,ReadMore,12426.28,482
+PROD0128,HomeEase Quos Electronics,Home & Kitchen,ReadMore,17411.6,452
+PROD0129,FitZone Voluptatem Sports,Accessories,TechPro,23812.07,79
+PROD0130,UrbanStyle Doloremque Sports,Accessories,UrbanStyle,7522.89,406
+PROD0131,UrbanStyle Alias Electronics,Sports,UrbanStyle,6309.05,102
+PROD0132,TechPro Consequatur Books,Home & Kitchen,ReadMore,15124.41,239
+PROD0133,ReadMore Sunt Electronics,Accessories,HomeEase,3442.95,264
+PROD0134,UrbanStyle Rem Electronics,Accessories,HomeEase,14646.4,32
+PROD0135,TechPro Adipisci Accessories,Accessories,FitZone,2402.61,34
+PROD0136,HomeEase Vel Electronics,Beauty,HomeEase,12365.97,248
+PROD0137,FitZone Harum Fashion,Accessories,UrbanStyle,15585.9,487
+PROD0138,HomeEase Earum Books,Accessories,TechPro,1937.79,49
+PROD0139,GlowCare Doloribus Fashion,Home & Kitchen,HomeEase,5331.65,279
+PROD0140,FitZone Dolore Fashion,Fashion,ReadMore,8516.62,471
+PROD0141,ReadMore Eveniet Sports,Home & Kitchen,ReadMore,9340.62,241
+PROD0142,FitZone Aperiam Beauty,Home & Kitchen,FitZone,16967.07,151
+PROD0143,UrbanStyle Dolorum Accessories,Beauty,FitZone,13319.26,146
+PROD0144,GlowCare Eius Accessories,Beauty,UrbanStyle,9675.67,38
+PROD0145,GlowCare Eos Fashion,Electronics,HomeEase,11376.22,188
+PROD0146,TechPro Eius Electronics,Fashion,HomeEase,520.83,24
+PROD0147,ReadMore Delectus Beauty,Accessories,FitZone,19308.8,243
+PROD0148,HomeEase Impedit Beauty,Electronics,HomeEase,1215.96,222
+PROD0149,GlowCare Officia Beauty,Accessories,UrbanStyle,20766.9,229
+PROD0150,ReadMore Assumenda Electronics,Accessories,TechPro,13616.25,152
+PROD0151,ReadMore Ut Books,Beauty,ReadMore,13289.44,410
+PROD0152,ReadMore Odio Electronics,Accessories,UrbanStyle,17673.25,287
+PROD0153,TechPro Et Beauty,Accessories,HomeEase,21516.94,394
+PROD0154,ReadMore Sit Home & Kitchen,Home & Kitchen,UrbanStyle,23577.57,452
+PROD0155,TechPro Deleniti Fashion,Beauty,ReadMore,13675.12,107
+PROD0156,UrbanStyle Aliquid Fashion,Sports,GlowCare,3935.47,32
+PROD0157,FitZone Cumque Beauty,Home & Kitchen,ReadMore,21989.93,402
+PROD0158,UrbanStyle Enim Beauty,Electronics,ReadMore,1207.71,362
+PROD0159,UrbanStyle Maiores Home & Kitchen,Home & Kitchen,GlowCare,20221.77,110
+PROD0160,GlowCare Sunt Fashion,Sports,HomeEase,17074.14,120
+PROD0161,TechPro In Beauty,Beauty,HomeEase,22637.15,15
+PROD0162,FitZone Vitae Electronics,Fashion,TechPro,22456.98,226
+PROD0163,TechPro Non Books,Accessories,ReadMore,1517.27,10
+PROD0164,FitZone Dolor Accessories,Books,UrbanStyle,15313.88,202
+PROD0165,TechPro Voluptas Electronics,Fashion,TechPro,3290.98,201
+PROD0166,UrbanStyle At Fashion,Fashion,HomeEase,2145.1,97
+PROD0167,GlowCare Dolore Beauty,Accessories,HomeEase,11316.72,115
+PROD0168,GlowCare Pariatur Fashion,Beauty,FitZone,2619.52,452
+PROD0169,GlowCare Minus Electronics,Fashion,TechPro,18251.71,470
+PROD0170,UrbanStyle Ab Beauty,Sports,HomeEase,24229.7,438
+PROD0171,TechPro Dolores Beauty,Accessories,GlowCare,14325.23,280
+PROD0172,HomeEase Minima Accessories,Beauty,FitZone,6031.42,348
+PROD0173,GlowCare Aliquid Home & Kitchen,Fashion,UrbanStyle,21111.36,231
+PROD0174,GlowCare Quibusdam Books,Accessories,FitZone,21356.82,460
+PROD0175,ReadMore Doloribus Accessories,Books,ReadMore,18372.82,110
+PROD0176,FitZone Vitae Books,Electronics,ReadMore,15454.89,351
+PROD0177,ReadMore Nihil Beauty,Beauty,UrbanStyle,21721.12,417
+PROD0178,UrbanStyle Corrupti Fashion,Beauty,GlowCare,4248.8,11
+PROD0179,HomeEase Blanditiis Fashion,Home & Kitchen,UrbanStyle,23303.61,471
+PROD0180,TechPro Dolore Sports,Accessories,TechPro,23690.59,487
+PROD0181,ReadMore Error Sports,Fashion,UrbanStyle,21825.28,20
+PROD0182,TechPro Aut Books,Electronics,UrbanStyle,6415.67,126
+PROD0183,HomeEase Dolor Electronics,Accessories,FitZone,21482.68,284
+PROD0184,TechPro Nesciunt Sports,Books,GlowCare,12540.93,434
+PROD0185,GlowCare Corrupti Sports,Sports,UrbanStyle,14953.86,120
+PROD0186,FitZone Nostrum Fashion,Beauty,TechPro,21046.74,123
+PROD0187,TechPro Eum Sports,Sports,FitZone,932.68,406
+PROD0188,TechPro Voluptates Accessories,Sports,GlowCare,9200.34,32
+PROD0189,UrbanStyle Doloremque Electronics,Sports,GlowCare,20429.01,391
+PROD0190,FitZone Fugiat Electronics,Home & Kitchen,HomeEase,20385.89,169
+PROD0191,ReadMore Quasi Accessories,Accessories,ReadMore,21247.31,76
+PROD0192,UrbanStyle Quos Beauty,Sports,TechPro,4395.72,452
+PROD0193,TechPro Veritatis Sports,Fashion,ReadMore,17705.69,296
+PROD0194,UrbanStyle Quia Sports,Fashion,FitZone,3832.43,329
+PROD0195,FitZone Rerum Electronics,Electronics,FitZone,19670.22,62
+PROD0196,FitZone Reprehenderit Electronics,Electronics,TechPro,6278.37,269
+PROD0197,GlowCare Iure Books,Books,GlowCare,18497.62,215
+PROD0198,FitZone Odio Sports,Sports,UrbanStyle,11483.5,189
+PROD0199,FitZone Dolore Home & Kitchen,Sports,TechPro,24659.32,74
+PROD0200,HomeEase Saepe Fashion,Home & Kitchen,FitZone,14580.95,173
+PROD0201,ReadMore Quibusdam Books,Accessories,ReadMore,15887.6,66
+PROD0202,HomeEase Ut Fashion,Sports,TechPro,9329.82,92
+PROD0203,HomeEase Reiciendis Beauty,Sports,GlowCare,18415.83,52
+PROD0204,UrbanStyle Esse Books,Accessories,HomeEase,12472.66,495
+PROD0205,ReadMore Occaecati Home & Kitchen,Sports,HomeEase,647.07,435
+PROD0206,GlowCare Nisi Home & Kitchen,Beauty,UrbanStyle,15292.43,93
+PROD0207,TechPro Doloribus Electronics,Beauty,UrbanStyle,20795.23,112
+PROD0208,GlowCare Similique Sports,Home & Kitchen,GlowCare,6071.92,228
+PROD0209,FitZone Numquam Electronics,Home & Kitchen,ReadMore,5681.6,249
+PROD0210,TechPro Hic Sports,Fashion,UrbanStyle,15299.99,390
+PROD0211,UrbanStyle Ipsam Sports,Home & Kitchen,HomeEase,20485.7,208
+PROD0212,HomeEase Facilis Fashion,Books,GlowCare,6389.83,467
+PROD0213,HomeEase Sequi Electronics,Fashion,GlowCare,23320.05,181
+PROD0214,UrbanStyle Error Home & Kitchen,Accessories,GlowCare,23199.13,266
+PROD0215,HomeEase Adipisci Fashion,Sports,TechPro,5172.51,491
+PROD0216,GlowCare Eius Accessories,Home & Kitchen,ReadMore,6741.12,280
+PROD0217,FitZone Necessitatibus Books,Books,ReadMore,17574.55,442
+PROD0218,HomeEase Impedit Sports,Home & Kitchen,UrbanStyle,23802.93,471
+PROD0219,ReadMore Minus Sports,Home & Kitchen,ReadMore,17804.8,449
+PROD0220,TechPro Quidem Books,Fashion,FitZone,11232.97,154
+PROD0221,FitZone Omnis Home & Kitchen,Accessories,HomeEase,4390.4,82
+PROD0222,ReadMore Consectetur Electronics,Accessories,UrbanStyle,11632.51,185
+PROD0223,UrbanStyle Repellendus Home & Kitchen,Fashion,ReadMore,15247.45,348
+PROD0224,TechPro Cum Electronics,Electronics,HomeEase,8406.94,484
+PROD0225,ReadMore Voluptate Sports,Fashion,UrbanStyle,12853.9,138
+PROD0226,UrbanStyle Debitis Home & Kitchen,Fashion,FitZone,3428.44,54
+PROD0227,HomeEase Asperiores Sports,Beauty,HomeEase,11413.72,18
+PROD0228,UrbanStyle Eum Books,Home & Kitchen,FitZone,2450.33,347
+PROD0229,HomeEase Voluptates Fashion,Fashion,HomeEase,1416.45,422
+PROD0230,ReadMore Quibusdam Books,Home & Kitchen,TechPro,21459.41,468
+PROD0231,HomeEase Culpa Sports,Home & Kitchen,TechPro,5285.23,345
+PROD0232,GlowCare Ratione Home & Kitchen,Beauty,HomeEase,14463.43,469
+PROD0233,TechPro Perferendis Electronics,Home & Kitchen,HomeEase,3893.92,453
+PROD0234,ReadMore Nam Beauty,Books,FitZone,6709.95,266
+PROD0235,HomeEase Totam Electronics,Fashion,ReadMore,9160.58,141
+PROD0236,TechPro Repellendus Home & Kitchen,Home & Kitchen,GlowCare,3762.32,315
+PROD0237,UrbanStyle Deleniti Books,Electronics,HomeEase,1338.91,163
+PROD0238,HomeEase Asperiores Fashion,Electronics,UrbanStyle,21953.44,251
+PROD0239,ReadMore Quas Beauty,Beauty,UrbanStyle,492.47,231
+PROD0240,FitZone Ducimus Books,Books,UrbanStyle,1719.82,296
+PROD0241,GlowCare Quidem Sports,Accessories,TechPro,20165.59,385
+PROD0242,TechPro Eveniet Electronics,Accessories,ReadMore,7193.09,440
+PROD0243,TechPro Debitis Books,Fashion,FitZone,18125.67,362
+PROD0244,UrbanStyle Excepturi Sports,Beauty,ReadMore,3825.54,59
+PROD0245,TechPro Architecto Accessories,Electronics,TechPro,6083.82,403
+PROD0246,HomeEase Quaerat Sports,Books,ReadMore,14404.43,21
+PROD0247,FitZone Sequi Fashion,Fashion,ReadMore,24718.16,383
+PROD0248,GlowCare Quisquam Fashion,Home & Kitchen,UrbanStyle,2020.5,125
+PROD0249,TechPro Aut Home & Kitchen,Fashion,HomeEase,10133.15,102
+PROD0250,HomeEase Excepturi Accessories,Sports,UrbanStyle,1267.45,387
+PROD0251,TechPro Quidem Home & Kitchen,Fashion,ReadMore,5140.02,439
+PROD0252,UrbanStyle Quod Books,Home & Kitchen,HomeEase,22705.19,220
+PROD0253,UrbanStyle Blanditiis Books,Sports,FitZone,2591.31,109
+PROD0254,TechPro Labore Home & Kitchen,Accessories,GlowCare,21449.88,57
+PROD0255,FitZone Qui Accessories,Books,HomeEase,4608.7,471
+PROD0256,GlowCare Quidem Sports,Beauty,TechPro,21572.13,64
+PROD0257,ReadMore Consectetur Fashion,Books,UrbanStyle,13542.48,471
+PROD0258,UrbanStyle Facilis Accessories,Fashion,UrbanStyle,21979.4,57
+PROD0259,UrbanStyle Facilis Accessories,Accessories,ReadMore,3961.4,157
+PROD0260,UrbanStyle Iusto Beauty,Beauty,ReadMore,19098.27,75
+PROD0261,TechPro Quo Fashion,Fashion,ReadMore,17081.01,18
+PROD0262,ReadMore Deleniti Home & Kitchen,Electronics,ReadMore,13664.29,383
+PROD0263,GlowCare Dolorum Accessories,Electronics,UrbanStyle,20302.38,484
+PROD0264,ReadMore Aperiam Accessories,Home & Kitchen,HomeEase,16276.89,189
+PROD0265,ReadMore Nobis Accessories,Accessories,FitZone,21950.64,249
+PROD0266,UrbanStyle Porro Home & Kitchen,Accessories,HomeEase,9649.72,359
+PROD0267,UrbanStyle Enim Accessories,Books,TechPro,14829.68,362
+PROD0268,ReadMore Deserunt Electronics,Electronics,UrbanStyle,21790.77,373
+PROD0269,GlowCare Est Accessories,Sports,HomeEase,5526.6,451
+PROD0270,TechPro Voluptatem Accessories,Sports,UrbanStyle,12245.87,78
+PROD0271,GlowCare Tempora Fashion,Accessories,TechPro,24026.36,83
+PROD0272,UrbanStyle Commodi Accessories,Accessories,GlowCare,11944.8,171
+PROD0273,GlowCare Quas Home & Kitchen,Fashion,GlowCare,6469.42,211
+PROD0274,HomeEase Dignissimos Accessories,Accessories,GlowCare,8906.04,373
+PROD0275,UrbanStyle Soluta Fashion,Beauty,UrbanStyle,22149.97,444
+PROD0276,TechPro Numquam Books,Sports,HomeEase,23881.05,148
+PROD0277,UrbanStyle Aut Beauty,Fashion,UrbanStyle,23762.62,9
+PROD0278,HomeEase Nisi Home & Kitchen,Beauty,FitZone,17533.47,29
+PROD0279,TechPro Tempora Accessories,Accessories,HomeEase,12837.64,279
+PROD0280,HomeEase Quisquam Home & Kitchen,Accessories,TechPro,4729.87,431
+PROD0281,ReadMore Beatae Sports,Electronics,ReadMore,3255.0,54
+PROD0282,GlowCare Iste Books,Fashion,GlowCare,1681.27,359
+PROD0283,FitZone Officia Home & Kitchen,Beauty,HomeEase,638.35,126
+PROD0284,TechPro Doloremque Electronics,Home & Kitchen,HomeEase,21977.17,179
+PROD0285,HomeEase Vero Fashion,Accessories,GlowCare,20265.15,231
+PROD0286,FitZone Harum Home & Kitchen,Books,TechPro,14281.54,380
+PROD0287,TechPro Labore Electronics,Books,UrbanStyle,24968.34,421
+PROD0288,FitZone Aliquam Beauty,Accessories,UrbanStyle,23835.64,450
+PROD0289,HomeEase Aliquid Books,Home & Kitchen,ReadMore,16446.36,92
+PROD0290,HomeEase Accusamus Beauty,Sports,HomeEase,11720.91,7
+PROD0291,FitZone Alias Sports,Books,GlowCare,3972.99,412
+PROD0292,TechPro Vel Beauty,Beauty,FitZone,12986.24,246
+PROD0293,FitZone Voluptas Fashion,Accessories,TechPro,4111.2,393
+PROD0294,HomeEase Alias Electronics,Accessories,UrbanStyle,10080.99,452
+PROD0295,ReadMore Aliquam Beauty,Accessories,TechPro,23577.62,330
+PROD0296,TechPro Blanditiis Sports,Home & Kitchen,TechPro,8680.42,195
+PROD0297,FitZone Iste Books,Sports,ReadMore,3988.28,432
+PROD0298,ReadMore Doloremque Books,Fashion,TechPro,14643.02,441
+PROD0299,ReadMore Tempore Books,Accessories,GlowCare,15138.23,162
+PROD0300,UrbanStyle Reprehenderit Home & Kitchen,Fashion,ReadMore,5005.54,433
+PROD0301,GlowCare Beatae Electronics,Beauty,GlowCare,5074.54,39
+PROD0302,ReadMore Blanditiis Home & Kitchen,Beauty,ReadMore,24740.82,253
+PROD0303,FitZone Voluptas Home & Kitchen,Beauty,GlowCare,6232.61,395
+PROD0304,ReadMore Eaque Accessories,Books,ReadMore,20987.0,84
+PROD0305,TechPro Perspiciatis Books,Beauty,ReadMore,11863.5,271
+PROD0306,HomeEase Consequuntur Sports,Accessories,HomeEase,10987.17,77
+PROD0307,HomeEase Nulla Books,Home & Kitchen,GlowCare,7514.36,212
+PROD0308,GlowCare Quidem Home & Kitchen,Home & Kitchen,HomeEase,19390.65,303
+PROD0309,GlowCare Tenetur Books,Sports,ReadMore,22040.27,254
+PROD0310,HomeEase Minima Sports,Home & Kitchen,UrbanStyle,6675.22,90
+PROD0311,UrbanStyle Aspernatur Fashion,Books,ReadMore,2557.49,483
+PROD0312,GlowCare Suscipit Books,Fashion,UrbanStyle,3594.74,384
+PROD0313,GlowCare Sed Books,Sports,UrbanStyle,19861.32,192
+PROD0314,ReadMore Alias Fashion,Home & Kitchen,UrbanStyle,11007.94,252
+PROD0315,FitZone Distinctio Sports,Beauty,UrbanStyle,3470.62,277
+PROD0316,HomeEase Libero Beauty,Home & Kitchen,GlowCare,8638.49,142
+PROD0317,FitZone Ipsam Accessories,Electronics,FitZone,12952.55,243
+PROD0318,TechPro Modi Home & Kitchen,Sports,GlowCare,21330.73,211
+PROD0319,HomeEase Veniam Fashion,Accessories,FitZone,16114.87,194
+PROD0320,GlowCare Cum Accessories,Accessories,GlowCare,4564.79,269
+PROD0321,FitZone Quae Sports,Books,UrbanStyle,4134.99,328
+PROD0322,ReadMore Tenetur Home & Kitchen,Home & Kitchen,TechPro,10425.3,18
+PROD0323,GlowCare Illum Beauty,Home & Kitchen,ReadMore,2063.86,39
+PROD0324,GlowCare Illum Books,Books,FitZone,18938.07,97
+PROD0325,UrbanStyle Facilis Sports,Fashion,TechPro,10155.46,3
+PROD0326,GlowCare Dolore Accessories,Beauty,UrbanStyle,8706.33,32
+PROD0327,ReadMore Blanditiis Fashion,Beauty,FitZone,12825.4,298
+PROD0328,ReadMore Quisquam Electronics,Fashion,TechPro,17781.84,164
+PROD0329,HomeEase Dignissimos Sports,Fashion,GlowCare,14319.37,449
+PROD0330,ReadMore Sapiente Books,Electronics,UrbanStyle,20099.39,26
+PROD0331,FitZone Velit Home & Kitchen,Books,GlowCare,15807.82,172
+PROD0332,TechPro Repellat Accessories,Sports,GlowCare,19741.45,336
+PROD0333,UrbanStyle Quis Books,Beauty,UrbanStyle,17479.9,112
+PROD0334,HomeEase Perferendis Fashion,Fashion,FitZone,4988.64,433
+PROD0335,UrbanStyle Illo Fashion,Fashion,ReadMore,1497.44,372
+PROD0336,TechPro Porro Electronics,Books,HomeEase,22604.14,379
+PROD0337,UrbanStyle Quasi Beauty,Accessories,HomeEase,23652.22,94
+PROD0338,FitZone Autem Accessories,Sports,ReadMore,18227.65,318
+PROD0339,TechPro Distinctio Beauty,Fashion,UrbanStyle,18160.03,232
+PROD0340,GlowCare Doloribus Books,Accessories,HomeEase,6898.92,133
+PROD0341,FitZone Illo Fashion,Electronics,ReadMore,13652.1,123
+PROD0342,ReadMore Provident Books,Sports,TechPro,24807.54,371
+PROD0343,GlowCare Soluta Beauty,Accessories,ReadMore,21432.22,350
+PROD0344,GlowCare Animi Fashion,Electronics,FitZone,7748.28,322
+PROD0345,UrbanStyle Ipsam Books,Home & Kitchen,ReadMore,7665.24,487
+PROD0346,ReadMore Modi Electronics,Beauty,GlowCare,12192.2,450
+PROD0347,TechPro Optio Accessories,Fashion,GlowCare,10233.45,352
+PROD0348,GlowCare Animi Fashion,Accessories,UrbanStyle,9403.97,115
+PROD0349,UrbanStyle Quae Accessories,Sports,GlowCare,15748.53,442
+PROD0350,ReadMore Nostrum Sports,Electronics,TechPro,484.02,12
+PROD0351,GlowCare Omnis Electronics,Beauty,ReadMore,19130.59,404
+PROD0352,FitZone Alias Fashion,Beauty,TechPro,18553.05,319
+PROD0353,TechPro Aperiam Beauty,Fashion,UrbanStyle,20791.91,164
+PROD0354,UrbanStyle Sapiente Accessories,Accessories,GlowCare,21067.82,207
+PROD0355,GlowCare Architecto Books,Beauty,HomeEase,14246.28,84
+PROD0356,FitZone A Sports,Fashion,ReadMore,19545.61,247
+PROD0357,FitZone Ut Home & Kitchen,Accessories,HomeEase,12410.89,431
+PROD0358,GlowCare Facilis Sports,Accessories,FitZone,23797.89,55
+PROD0359,ReadMore Exercitationem Sports,Home & Kitchen,UrbanStyle,4928.51,171
+PROD0360,GlowCare Minus Accessories,Fashion,FitZone,22907.22,140
+PROD0361,FitZone Laborum Beauty,Books,HomeEase,6610.81,131
+PROD0362,UrbanStyle Tempora Books,Electronics,HomeEase,2746.64,478
+PROD0363,GlowCare Laboriosam Beauty,Books,HomeEase,11089.23,200
+PROD0364,HomeEase Commodi Accessories,Accessories,FitZone,15449.56,367
+PROD0365,UrbanStyle Magni Accessories,Accessories,UrbanStyle,5927.78,288
+PROD0366,ReadMore Quas Home & Kitchen,Beauty,ReadMore,13983.3,420
+PROD0367,FitZone Harum Beauty,Beauty,ReadMore,20235.56,308
+PROD0368,ReadMore Quia Fashion,Beauty,TechPro,6574.96,356
+PROD0369,HomeEase Distinctio Beauty,Accessories,TechPro,14591.57,407
+PROD0370,TechPro Necessitatibus Books,Fashion,HomeEase,8614.29,344
+PROD0371,HomeEase Minus Fashion,Sports,UrbanStyle,13337.79,178
+PROD0372,HomeEase Recusandae Home & Kitchen,Fashion,UrbanStyle,16739.26,424
+PROD0373,HomeEase Cupiditate Sports,Electronics,GlowCare,8889.83,28
+PROD0374,TechPro Ex Fashion,Fashion,GlowCare,24863.17,442
+PROD0375,UrbanStyle Neque Fashion,Beauty,FitZone,14181.19,423
+PROD0376,GlowCare Distinctio Books,Home & Kitchen,GlowCare,20646.47,306
+PROD0377,UrbanStyle Fugiat Books,Electronics,ReadMore,18183.08,305
+PROD0378,UrbanStyle Quaerat Electronics,Books,ReadMore,21349.42,366
+PROD0379,GlowCare Eum Beauty,Home & Kitchen,FitZone,4509.44,35
+PROD0380,HomeEase Iste Sports,Electronics,TechPro,5718.55,462
+PROD0381,GlowCare Maxime Beauty,Electronics,HomeEase,12287.28,108
+PROD0382,TechPro Ut Fashion,Accessories,UrbanStyle,21337.6,315
+PROD0383,GlowCare Architecto Beauty,Beauty,TechPro,5099.84,145
+PROD0384,FitZone Maiores Books,Accessories,ReadMore,24282.4,275
+PROD0385,TechPro Ipsa Accessories,Books,TechPro,3363.66,388
+PROD0386,FitZone Dolores Beauty,Fashion,FitZone,4541.11,145
+PROD0387,GlowCare Repellat Electronics,Accessories,HomeEase,4346.57,379
+PROD0388,HomeEase Minus Home & Kitchen,Books,ReadMore,14732.53,167
+PROD0389,GlowCare Animi Accessories,Beauty,FitZone,22954.94,256
+PROD0390,GlowCare Quod Sports,Beauty,TechPro,6526.02,274
+PROD0391,ReadMore Animi Books,Accessories,UrbanStyle,13914.87,86
+PROD0392,FitZone Sunt Accessories,Beauty,GlowCare,4558.33,153
+PROD0393,FitZone Optio Fashion,Home & Kitchen,FitZone,15851.83,496
+PROD0394,GlowCare Asperiores Fashion,Books,ReadMore,3255.63,284
+PROD0395,HomeEase Nemo Beauty,Books,TechPro,12384.0,314
+PROD0396,GlowCare Eos Electronics,Electronics,GlowCare,16448.16,318
+PROD0397,GlowCare Excepturi Home & Kitchen,Sports,GlowCare,14561.95,97
+PROD0398,ReadMore Neque Books,Fashion,TechPro,3671.15,210
+PROD0399,GlowCare Sed Books,Beauty,HomeEase,4201.22,445
+PROD0400,UrbanStyle Sint Accessories,Books,TechPro,16850.17,47
+PROD0401,GlowCare Quos Fashion,Books,ReadMore,20260.76,317
+PROD0402,FitZone Officia Sports,Electronics,UrbanStyle,22720.15,273
+PROD0403,TechPro Sit Beauty,Fashion,ReadMore,20377.38,193
+PROD0404,FitZone Libero Sports,Sports,GlowCare,24353.29,251
+PROD0405,ReadMore Ad Electronics,Sports,UrbanStyle,10324.05,282
+PROD0406,TechPro Soluta Books,Beauty,FitZone,8412.24,261
+PROD0407,GlowCare Tempora Fashion,Sports,GlowCare,897.99,486
+PROD0408,GlowCare Qui Fashion,Sports,HomeEase,11356.87,453
+PROD0409,TechPro Ea Home & Kitchen,Accessories,TechPro,16353.67,442
+PROD0410,GlowCare Debitis Home & Kitchen,Fashion,FitZone,20421.95,261
+PROD0411,UrbanStyle At Beauty,Fashion,ReadMore,6832.16,30
+PROD0412,HomeEase Assumenda Home & Kitchen,Accessories,UrbanStyle,12936.58,104
+PROD0413,GlowCare Fugiat Home & Kitchen,Beauty,FitZone,16617.5,487
+PROD0414,GlowCare Architecto Home & Kitchen,Books,HomeEase,13879.3,349
+PROD0415,TechPro Cupiditate Beauty,Electronics,TechPro,6994.99,311
+PROD0416,TechPro Mollitia Books,Beauty,FitZone,19947.6,437
+PROD0417,FitZone Explicabo Electronics,Home & Kitchen,ReadMore,4498.53,468
+PROD0418,HomeEase Quia Fashion,Sports,UrbanStyle,22643.4,168
+PROD0419,ReadMore Cupiditate Electronics,Accessories,FitZone,23824.35,235
+PROD0420,ReadMore Quos Electronics,Electronics,TechPro,9265.58,273
+PROD0421,TechPro Quia Fashion,Books,ReadMore,9528.68,342
+PROD0422,UrbanStyle Ab Accessories,Books,FitZone,18633.04,229
+PROD0423,TechPro Facilis Sports,Fashion,UrbanStyle,11515.41,22
+PROD0424,UrbanStyle Sunt Fashion,Home & Kitchen,TechPro,908.56,475
+PROD0425,UrbanStyle Facilis Beauty,Books,HomeEase,23012.86,163
+PROD0426,ReadMore Temporibus Electronics,Home & Kitchen,HomeEase,10882.04,280
+PROD0427,FitZone Dolorum Fashion,Sports,GlowCare,5245.88,6
+PROD0428,GlowCare Quo Books,Fashion,FitZone,13980.02,209
+PROD0429,HomeEase Pariatur Accessories,Electronics,UrbanStyle,5628.09,252
+PROD0430,HomeEase Praesentium Fashion,Fashion,FitZone,5308.55,403
+PROD0431,FitZone Expedita Sports,Sports,TechPro,13733.68,132
+PROD0432,ReadMore Quas Books,Accessories,GlowCare,9897.24,273
+PROD0433,TechPro Earum Accessories,Books,UrbanStyle,14409.81,105
+PROD0434,UrbanStyle Minus Home & Kitchen,Home & Kitchen,FitZone,24921.27,231
+PROD0435,TechPro Eaque Sports,Accessories,UrbanStyle,21503.51,32
+PROD0436,TechPro Quia Home & Kitchen,Sports,TechPro,389.24,78
+PROD0437,FitZone Tenetur Books,Books,GlowCare,1452.83,34
+PROD0438,GlowCare At Beauty,Beauty,UrbanStyle,15329.58,494
+PROD0439,ReadMore Natus Fashion,Home & Kitchen,TechPro,15730.78,109
+PROD0440,TechPro Fugiat Sports,Sports,HomeEase,21979.01,320
+PROD0441,ReadMore Exercitationem Accessories,Electronics,UrbanStyle,15800.25,62
+PROD0442,ReadMore Dolor Fashion,Electronics,GlowCare,5846.55,468
+PROD0443,TechPro Veniam Books,Books,ReadMore,11818.67,327
+PROD0444,HomeEase At Accessories,Books,ReadMore,20262.65,454
+PROD0445,ReadMore Dicta Sports,Electronics,UrbanStyle,23085.98,296
+PROD0446,TechPro Voluptatem Accessories,Beauty,UrbanStyle,6074.73,177
+PROD0447,FitZone Natus Accessories,Fashion,TechPro,13581.74,383
+PROD0448,TechPro Sit Home & Kitchen,Electronics,FitZone,4140.56,363
+PROD0449,FitZone Veritatis Beauty,Books,ReadMore,12525.09,231
+PROD0450,ReadMore Impedit Home & Kitchen,Books,FitZone,2433.92,103
+PROD0451,TechPro Dolores Sports,Beauty,ReadMore,23554.8,413
+PROD0452,ReadMore Quasi Home & Kitchen,Electronics,UrbanStyle,16023.44,293
+PROD0453,TechPro Rem Accessories,Beauty,GlowCare,21384.43,34
+PROD0454,GlowCare Tenetur Accessories,Electronics,GlowCare,24957.72,193
+PROD0455,GlowCare Velit Electronics,Fashion,ReadMore,4729.3,173
+PROD0456,GlowCare Vel Home & Kitchen,Sports,ReadMore,17414.45,391
+PROD0457,ReadMore Inventore Accessories,Electronics,TechPro,22197.15,101
+PROD0458,GlowCare Nemo Books,Sports,UrbanStyle,14482.84,323
+PROD0459,UrbanStyle In Beauty,Electronics,UrbanStyle,16064.11,292
+PROD0460,UrbanStyle Dolore Books,Fashion,FitZone,10309.65,84
+PROD0461,FitZone Adipisci Books,Accessories,TechPro,16933.74,396
+PROD0462,HomeEase Exercitationem Sports,Books,HomeEase,10009.73,200
+PROD0463,FitZone Nihil Accessories,Sports,GlowCare,12019.64,172
+PROD0464,GlowCare Delectus Beauty,Beauty,GlowCare,2751.31,28
+PROD0465,GlowCare Maxime Accessories,Electronics,UrbanStyle,392.66,296
+PROD0466,ReadMore Quia Sports,Books,TechPro,1566.8,55
+PROD0467,HomeEase Non Home & Kitchen,Electronics,HomeEase,4973.73,471
+PROD0468,UrbanStyle Error Accessories,Beauty,GlowCare,11523.23,15
+PROD0469,TechPro Corporis Home & Kitchen,Fashion,TechPro,719.67,139
+PROD0470,GlowCare Ipsa Fashion,Home & Kitchen,HomeEase,4066.38,65
+PROD0471,GlowCare Explicabo Sports,Electronics,ReadMore,19579.61,445
+PROD0472,FitZone Blanditiis Books,Accessories,UrbanStyle,19101.49,146
+PROD0473,GlowCare Officiis Home & Kitchen,Beauty,FitZone,19785.1,157
+PROD0474,TechPro Animi Beauty,Home & Kitchen,GlowCare,23054.14,399
+PROD0475,HomeEase Molestias Fashion,Electronics,GlowCare,3152.08,471
+PROD0476,GlowCare Illum Fashion,Sports,HomeEase,4245.03,396
+PROD0477,HomeEase Suscipit Accessories,Books,FitZone,8471.46,68
+PROD0478,HomeEase Molestias Home & Kitchen,Books,ReadMore,22895.42,22
+PROD0479,HomeEase Dolore Sports,Beauty,TechPro,19431.62,189
+PROD0480,ReadMore Libero Home & Kitchen,Sports,UrbanStyle,8237.53,247
+PROD0481,FitZone Minima Electronics,Fashion,TechPro,2372.46,485
+PROD0482,FitZone Illum Fashion,Home & Kitchen,HomeEase,15485.84,414
+PROD0483,TechPro Animi Fashion,Beauty,GlowCare,6568.37,308
+PROD0484,ReadMore Ea Beauty,Accessories,ReadMore,13372.11,375
+PROD0485,GlowCare Necessitatibus Sports,Electronics,GlowCare,23556.67,144
+PROD0486,UrbanStyle Eum Books,Books,TechPro,14400.48,383
+PROD0487,GlowCare Veniam Books,Electronics,ReadMore,23111.02,304
+PROD0488,ReadMore Maxime Beauty,Home & Kitchen,UrbanStyle,9946.75,176
+PROD0489,GlowCare Laboriosam Accessories,Sports,HomeEase,15906.75,194
+PROD0490,TechPro Quisquam Electronics,Sports,UrbanStyle,22368.37,409
+PROD0491,HomeEase Vero Fashion,Beauty,HomeEase,14781.67,12
+PROD0492,GlowCare Ea Books,Beauty,UrbanStyle,15449.1,363
+PROD0493,UrbanStyle Impedit Home & Kitchen,Sports,TechPro,17964.15,165
+PROD0494,ReadMore Earum Sports,Beauty,FitZone,22076.15,149
+PROD0495,HomeEase Adipisci Beauty,Sports,ReadMore,2385.95,340
+PROD0496,FitZone Velit Sports,Home & Kitchen,HomeEase,8553.45,412
+PROD0497,HomeEase Blanditiis Beauty,Beauty,TechPro,10061.98,44
+PROD0498,ReadMore Optio Sports,Sports,GlowCare,22760.71,173
+PROD0499,HomeEase Minus Home & Kitchen,Beauty,GlowCare,23908.95,166
+PROD0500,ReadMore Inventore Beauty,Electronics,UrbanStyle,3184.56,196

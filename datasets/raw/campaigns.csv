@@ -1,0 +1,1001 @@
+campaign_id,campaign_name,campaign_type,discount_percentage,budget,status
+CAMP0001,Festive Sale 1,Push Notification,40,68236,Scheduled
+CAMP0002,Summer Offer 2,Email,15,47936,Active
+CAMP0003,Summer Promotion 3,Push Notification,20,9553,Scheduled
+CAMP0004,New Year Sale 4,Email,30,65267,Active
+CAMP0005,Festive Rewards 5,Email,40,55247,Completed
+CAMP0006,Festive Rewards 6,Email,25,82396,Active
+CAMP0007,Summer Sale 7,Push Notification,30,51124,Scheduled
+CAMP0008,New Year Promotion 8,Social Media,30,94970,Scheduled
+CAMP0009,Mega Promotion 9,Social Media,5,37008,Scheduled
+CAMP0010,New Year Promotion 10,Push Notification,5,11902,Completed
+CAMP0011,Mega Promotion 11,Push Notification,20,17650,Active
+CAMP0012,Flash Offer 12,Email,10,78531,Completed
+CAMP0013,Mega Promotion 13,Social Media,10,21019,Active
+CAMP0014,Mega Offer 14,SMS,25,58776,Scheduled
+CAMP0015,Festive Sale 15,Push Notification,30,69038,Scheduled
+CAMP0016,New Year Rewards 16,Email,30,11462,Active
+CAMP0017,Flash Promotion 17,SMS,5,39069,Active
+CAMP0018,Mega Promotion 18,SMS,20,35636,Active
+CAMP0019,New Year Rewards 19,Push Notification,40,49150,Active
+CAMP0020,Summer Promotion 20,Social Media,10,85517,Scheduled
+CAMP0021,Flash Sale 21,Email,25,20607,Active
+CAMP0022,Festive Offer 22,Push Notification,25,27081,Active
+CAMP0023,Festive Offer 23,Push Notification,20,91500,Scheduled
+CAMP0024,New Year Offer 24,Social Media,5,5135,Scheduled
+CAMP0025,Summer Promotion 25,SMS,10,91918,Scheduled
+CAMP0026,New Year Rewards 26,Push Notification,30,24663,Scheduled
+CAMP0027,New Year Promotion 27,Push Notification,40,34889,Active
+CAMP0028,Flash Sale 28,Social Media,10,76189,Completed
+CAMP0029,Festive Offer 29,Push Notification,5,67250,Scheduled
+CAMP0030,Mega Rewards 30,SMS,5,74296,Active
+CAMP0031,Summer Promotion 31,Social Media,25,41166,Completed
+CAMP0032,Summer Rewards 32,Social Media,5,67873,Active
+CAMP0033,New Year Rewards 33,SMS,15,61673,Completed
+CAMP0034,Festive Rewards 34,Push Notification,20,28093,Scheduled
+CAMP0035,New Year Sale 35,SMS,20,84866,Active
+CAMP0036,Flash Promotion 36,SMS,40,12051,Scheduled
+CAMP0037,Summer Promotion 37,Social Media,5,17968,Active
+CAMP0038,Festive Rewards 38,Push Notification,20,88426,Completed
+CAMP0039,New Year Rewards 39,Social Media,25,78473,Scheduled
+CAMP0040,Mega Offer 40,Email,10,98148,Scheduled
+CAMP0041,New Year Rewards 41,Push Notification,10,35516,Completed
+CAMP0042,Festive Promotion 42,Email,20,33086,Completed
+CAMP0043,Festive Offer 43,Social Media,5,43930,Active
+CAMP0044,Flash Offer 44,Social Media,30,16756,Completed
+CAMP0045,Mega Promotion 45,SMS,20,17697,Completed
+CAMP0046,Mega Rewards 46,Email,40,10004,Active
+CAMP0047,Summer Sale 47,Social Media,30,60638,Scheduled
+CAMP0048,Summer Sale 48,Email,30,69664,Active
+CAMP0049,Summer Offer 49,Social Media,15,83265,Scheduled
+CAMP0050,Mega Rewards 50,SMS,40,48514,Completed
+CAMP0051,New Year Sale 51,Push Notification,25,39990,Active
+CAMP0052,Festive Sale 52,Push Notification,40,83742,Active
+CAMP0053,Summer Rewards 53,SMS,20,89354,Active
+CAMP0054,Festive Sale 54,Social Media,30,48954,Completed
+CAMP0055,Festive Promotion 55,Push Notification,30,80341,Completed
+CAMP0056,Flash Promotion 56,Email,40,94038,Completed
+CAMP0057,Mega Sale 57,Email,25,66730,Completed
+CAMP0058,Summer Offer 58,Social Media,30,84949,Active
+CAMP0059,Flash Promotion 59,Email,30,96883,Scheduled
+CAMP0060,Summer Sale 60,SMS,5,35352,Scheduled
+CAMP0061,Mega Sale 61,Email,5,71809,Scheduled
+CAMP0062,Summer Sale 62,SMS,25,11661,Active
+CAMP0063,Festive Offer 63,Push Notification,20,63937,Scheduled
+CAMP0064,New Year Rewards 64,SMS,5,90843,Completed
+CAMP0065,Summer Promotion 65,SMS,40,68151,Active
+CAMP0066,Mega Promotion 66,SMS,15,36625,Scheduled
+CAMP0067,Mega Sale 67,SMS,15,72853,Active
+CAMP0068,Mega Promotion 68,Email,25,17186,Scheduled
+CAMP0069,Festive Sale 69,Social Media,15,63307,Active
+CAMP0070,New Year Promotion 70,Email,25,54362,Completed
+CAMP0071,Festive Sale 71,SMS,20,30139,Scheduled
+CAMP0072,New Year Offer 72,SMS,10,16969,Active
+CAMP0073,Flash Sale 73,Social Media,5,34752,Completed
+CAMP0074,New Year Promotion 74,Email,5,56354,Completed
+CAMP0075,Festive Rewards 75,Email,20,94134,Completed
+CAMP0076,New Year Promotion 76,Email,20,88671,Active
+CAMP0077,Mega Promotion 77,Push Notification,40,50481,Active
+CAMP0078,Flash Rewards 78,Social Media,30,78534,Completed
+CAMP0079,New Year Offer 79,Email,30,10945,Active
+CAMP0080,Flash Promotion 80,Push Notification,20,20297,Completed
+CAMP0081,Festive Offer 81,Social Media,40,58549,Scheduled
+CAMP0082,New Year Offer 82,Push Notification,5,26230,Completed
+CAMP0083,Festive Sale 83,Social Media,25,82973,Active
+CAMP0084,Summer Sale 84,Push Notification,15,81372,Active
+CAMP0085,Mega Sale 85,Email,5,75453,Scheduled
+CAMP0086,Festive Sale 86,Social Media,10,67285,Active
+CAMP0087,New Year Offer 87,Email,25,70875,Active
+CAMP0088,Festive Sale 88,Social Media,30,47593,Completed
+CAMP0089,Flash Promotion 89,Email,20,76930,Completed
+CAMP0090,Flash Offer 90,SMS,10,45403,Active
+CAMP0091,New Year Rewards 91,Social Media,30,16296,Completed
+CAMP0092,New Year Sale 92,Social Media,30,51189,Completed
+CAMP0093,Mega Promotion 93,Social Media,30,89137,Scheduled
+CAMP0094,Festive Rewards 94,Push Notification,15,69933,Active
+CAMP0095,Summer Promotion 95,Email,15,20975,Active
+CAMP0096,Festive Rewards 96,Email,5,64574,Scheduled
+CAMP0097,Festive Promotion 97,Email,30,76679,Completed
+CAMP0098,Summer Sale 98,SMS,25,7116,Active
+CAMP0099,Summer Promotion 99,SMS,10,31208,Scheduled
+CAMP0100,New Year Offer 100,Social Media,20,85953,Scheduled
+CAMP0101,New Year Rewards 101,Push Notification,30,5432,Active
+CAMP0102,New Year Promotion 102,SMS,20,22201,Completed
+CAMP0103,New Year Offer 103,Email,30,49845,Completed
+CAMP0104,Flash Rewards 104,Social Media,40,35810,Active
+CAMP0105,Flash Offer 105,Email,40,29325,Completed
+CAMP0106,Summer Offer 106,Email,10,65483,Scheduled
+CAMP0107,Flash Rewards 107,SMS,5,38767,Scheduled
+CAMP0108,Summer Rewards 108,Social Media,10,63568,Active
+CAMP0109,Flash Offer 109,Push Notification,25,38342,Active
+CAMP0110,Summer Offer 110,Social Media,20,42337,Active
+CAMP0111,Festive Rewards 111,SMS,20,29124,Active
+CAMP0112,Flash Offer 112,SMS,40,29215,Scheduled
+CAMP0113,Festive Rewards 113,Social Media,40,81337,Active
+CAMP0114,Summer Sale 114,SMS,10,88894,Completed
+CAMP0115,Flash Promotion 115,Email,5,70058,Completed
+CAMP0116,Mega Promotion 116,SMS,30,70155,Active
+CAMP0117,Flash Sale 117,SMS,5,37997,Active
+CAMP0118,Summer Rewards 118,Push Notification,15,74809,Completed
+CAMP0119,Mega Offer 119,Email,15,88545,Active
+CAMP0120,Festive Offer 120,Social Media,10,10561,Active
+CAMP0121,Flash Promotion 121,SMS,10,42632,Completed
+CAMP0122,Mega Rewards 122,Email,40,97138,Completed
+CAMP0123,Mega Offer 123,SMS,20,20507,Scheduled
+CAMP0124,New Year Sale 124,Email,20,73338,Completed
+CAMP0125,New Year Promotion 125,Push Notification,30,40146,Scheduled
+CAMP0126,Mega Rewards 126,SMS,10,14371,Active
+CAMP0127,Summer Promotion 127,Push Notification,30,70650,Scheduled
+CAMP0128,Flash Sale 128,Social Media,30,70673,Scheduled
+CAMP0129,New Year Sale 129,Social Media,15,11529,Active
+CAMP0130,New Year Rewards 130,Push Notification,40,12291,Completed
+CAMP0131,New Year Offer 131,Push Notification,5,71374,Active
+CAMP0132,Flash Offer 132,Email,30,40453,Scheduled
+CAMP0133,New Year Promotion 133,Email,20,15976,Completed
+CAMP0134,Flash Sale 134,Push Notification,30,71502,Completed
+CAMP0135,Festive Promotion 135,Social Media,20,52086,Scheduled
+CAMP0136,New Year Promotion 136,Email,15,89472,Scheduled
+CAMP0137,Summer Offer 137,Push Notification,15,68444,Scheduled
+CAMP0138,Summer Offer 138,Social Media,30,22777,Active
+CAMP0139,New Year Offer 139,Email,5,72853,Completed
+CAMP0140,New Year Sale 140,Email,40,80114,Scheduled
+CAMP0141,New Year Sale 141,SMS,5,34940,Completed
+CAMP0142,Summer Promotion 142,Social Media,20,70164,Completed
+CAMP0143,Mega Rewards 143,SMS,10,42268,Active
+CAMP0144,Summer Promotion 144,Push Notification,25,82597,Completed
+CAMP0145,Mega Sale 145,SMS,15,19431,Active
+CAMP0146,New Year Offer 146,Email,10,8634,Completed
+CAMP0147,Mega Promotion 147,Email,30,63294,Completed
+CAMP0148,Summer Offer 148,Email,30,18547,Scheduled
+CAMP0149,New Year Promotion 149,Email,25,36697,Completed
+CAMP0150,Festive Offer 150,SMS,25,58062,Active
+CAMP0151,Summer Rewards 151,Email,30,7033,Scheduled
+CAMP0152,Summer Promotion 152,Email,20,73363,Scheduled
+CAMP0153,Festive Rewards 153,Email,15,55549,Active
+CAMP0154,Summer Sale 154,Email,30,76717,Scheduled
+CAMP0155,Festive Promotion 155,Push Notification,25,11829,Active
+CAMP0156,Festive Promotion 156,Social Media,10,33399,Active
+CAMP0157,Flash Rewards 157,Social Media,15,69328,Active
+CAMP0158,Festive Rewards 158,Social Media,25,79168,Scheduled
+CAMP0159,Festive Offer 159,SMS,25,57166,Scheduled
+CAMP0160,Flash Sale 160,Social Media,10,36129,Active
+CAMP0161,Flash Promotion 161,Social Media,30,28341,Scheduled
+CAMP0162,Mega Sale 162,Push Notification,20,65524,Scheduled
+CAMP0163,Summer Offer 163,Email,5,94903,Completed
+CAMP0164,Summer Sale 164,Social Media,40,72089,Completed
+CAMP0165,Festive Sale 165,Email,30,82374,Active
+CAMP0166,Flash Offer 166,Email,20,43456,Scheduled
+CAMP0167,Summer Rewards 167,Email,30,20078,Active
+CAMP0168,Flash Sale 168,Push Notification,20,53058,Scheduled
+CAMP0169,Mega Rewards 169,Email,5,68953,Completed
+CAMP0170,Mega Sale 170,Push Notification,15,40133,Active
+CAMP0171,New Year Promotion 171,Social Media,25,6709,Active
+CAMP0172,Summer Promotion 172,SMS,15,58009,Completed
+CAMP0173,Summer Promotion 173,Email,5,91905,Active
+CAMP0174,Festive Rewards 174,SMS,5,14556,Completed
+CAMP0175,Festive Promotion 175,SMS,20,87830,Scheduled
+CAMP0176,Summer Sale 176,Email,15,88702,Scheduled
+CAMP0177,Summer Offer 177,SMS,25,55565,Completed
+CAMP0178,Festive Promotion 178,Push Notification,30,89539,Scheduled
+CAMP0179,Festive Offer 179,Email,30,92738,Scheduled
+CAMP0180,New Year Promotion 180,Social Media,30,73458,Completed
+CAMP0181,Summer Promotion 181,Social Media,10,83495,Active
+CAMP0182,New Year Rewards 182,Email,20,20778,Completed
+CAMP0183,Summer Rewards 183,Push Notification,15,69162,Completed
+CAMP0184,Festive Offer 184,Email,20,28897,Scheduled
+CAMP0185,Festive Rewards 185,Email,5,21246,Completed
+CAMP0186,Mega Sale 186,Push Notification,40,75635,Active
+CAMP0187,Festive Rewards 187,Social Media,10,49783,Scheduled
+CAMP0188,Mega Rewards 188,Email,5,60017,Completed
+CAMP0189,New Year Promotion 189,SMS,20,6497,Active
+CAMP0190,Flash Offer 190,SMS,25,10013,Active
+CAMP0191,Summer Sale 191,Email,15,70330,Completed
+CAMP0192,New Year Offer 192,Push Notification,15,50199,Active
+CAMP0193,Summer Promotion 193,Social Media,40,49599,Active
+CAMP0194,Summer Promotion 194,SMS,30,58021,Active
+CAMP0195,Flash Rewards 195,SMS,25,93641,Scheduled
+CAMP0196,Summer Promotion 196,Push Notification,40,75180,Scheduled
+CAMP0197,New Year Sale 197,Social Media,40,19482,Active
+CAMP0198,Festive Sale 198,SMS,15,61584,Completed
+CAMP0199,Mega Sale 199,SMS,30,89475,Scheduled
+CAMP0200,Mega Offer 200,Social Media,10,69337,Completed
+CAMP0201,New Year Rewards 201,Email,25,81356,Scheduled
+CAMP0202,Mega Promotion 202,Email,20,31981,Completed
+CAMP0203,Summer Sale 203,Social Media,20,94557,Active
+CAMP0204,Flash Offer 204,SMS,10,82095,Active
+CAMP0205,Flash Rewards 205,Email,30,95575,Active
+CAMP0206,Flash Sale 206,Email,15,78494,Active
+CAMP0207,Summer Sale 207,Email,5,84197,Scheduled
+CAMP0208,Flash Offer 208,SMS,20,40837,Scheduled
+CAMP0209,Flash Rewards 209,Social Media,25,62403,Scheduled
+CAMP0210,Festive Promotion 210,SMS,15,63249,Active
+CAMP0211,Flash Rewards 211,Social Media,25,40419,Scheduled
+CAMP0212,Summer Promotion 212,Push Notification,15,16677,Active
+CAMP0213,Summer Rewards 213,SMS,20,36076,Completed
+CAMP0214,Flash Promotion 214,SMS,25,70134,Active
+CAMP0215,New Year Sale 215,Push Notification,40,37329,Scheduled
+CAMP0216,Summer Promotion 216,Email,40,97764,Active
+CAMP0217,Flash Offer 217,Push Notification,25,47000,Completed
+CAMP0218,Summer Offer 218,Push Notification,10,20092,Completed
+CAMP0219,Mega Sale 219,Email,15,77305,Scheduled
+CAMP0220,Flash Sale 220,Email,20,66146,Completed
+CAMP0221,Summer Promotion 221,Social Media,30,21357,Scheduled
+CAMP0222,Flash Promotion 222,Social Media,40,61015,Scheduled
+CAMP0223,Summer Offer 223,Push Notification,10,36089,Active
+CAMP0224,Mega Offer 224,Push Notification,10,21581,Active
+CAMP0225,Mega Sale 225,SMS,5,65928,Scheduled
+CAMP0226,Festive Sale 226,Social Media,20,80608,Scheduled
+CAMP0227,Flash Promotion 227,Email,40,86712,Completed
+CAMP0228,Mega Sale 228,SMS,5,6296,Completed
+CAMP0229,Mega Promotion 229,Email,15,16040,Completed
+CAMP0230,Mega Promotion 230,Push Notification,40,51111,Scheduled
+CAMP0231,Summer Rewards 231,Social Media,10,59285,Active
+CAMP0232,Summer Promotion 232,Social Media,20,93835,Completed
+CAMP0233,New Year Sale 233,Email,40,33221,Completed
+CAMP0234,Flash Promotion 234,Push Notification,25,27744,Completed
+CAMP0235,Summer Offer 235,Email,10,62082,Scheduled
+CAMP0236,Summer Sale 236,Social Media,30,97274,Completed
+CAMP0237,Mega Sale 237,Email,20,79125,Active
+CAMP0238,Summer Rewards 238,Email,10,86418,Completed
+CAMP0239,Summer Rewards 239,Push Notification,15,75299,Scheduled
+CAMP0240,Flash Rewards 240,Email,20,28111,Active
+CAMP0241,Mega Sale 241,SMS,30,57381,Active
+CAMP0242,Flash Offer 242,Email,15,89283,Active
+CAMP0243,Mega Offer 243,Social Media,20,71987,Active
+CAMP0244,Summer Promotion 244,Social Media,15,13101,Scheduled
+CAMP0245,Festive Offer 245,SMS,5,13185,Scheduled
+CAMP0246,Mega Sale 246,Push Notification,20,35159,Completed
+CAMP0247,Summer Rewards 247,Push Notification,15,96603,Active
+CAMP0248,Festive Offer 248,Email,30,38716,Scheduled
+CAMP0249,Festive Offer 249,Email,20,70762,Active
+CAMP0250,New Year Sale 250,SMS,25,95302,Active
+CAMP0251,Mega Promotion 251,Social Media,25,73873,Active
+CAMP0252,Mega Offer 252,Email,40,32668,Active
+CAMP0253,New Year Offer 253,Email,40,55525,Scheduled
+CAMP0254,Summer Rewards 254,SMS,40,95053,Scheduled
+CAMP0255,Festive Rewards 255,Email,15,88211,Completed
+CAMP0256,Festive Promotion 256,SMS,40,19441,Active
+CAMP0257,Flash Offer 257,Push Notification,25,94290,Completed
+CAMP0258,New Year Rewards 258,Email,40,90174,Scheduled
+CAMP0259,Mega Promotion 259,SMS,15,99787,Active
+CAMP0260,Flash Offer 260,Push Notification,25,84008,Completed
+CAMP0261,Mega Sale 261,Social Media,10,40616,Scheduled
+CAMP0262,New Year Promotion 262,SMS,10,74005,Scheduled
+CAMP0263,Mega Rewards 263,Social Media,20,70587,Completed
+CAMP0264,Summer Sale 264,Email,30,44403,Completed
+CAMP0265,New Year Offer 265,Social Media,15,41497,Completed
+CAMP0266,Flash Offer 266,Social Media,25,56746,Completed
+CAMP0267,Mega Offer 267,SMS,30,88907,Scheduled
+CAMP0268,Mega Sale 268,Push Notification,20,65196,Active
+CAMP0269,Festive Offer 269,Email,10,96947,Active
+CAMP0270,Summer Offer 270,Email,10,53281,Completed
+CAMP0271,Festive Sale 271,Email,15,8594,Active
+CAMP0272,Summer Rewards 272,Push Notification,30,88697,Scheduled
+CAMP0273,Festive Offer 273,Email,10,64344,Completed
+CAMP0274,Flash Sale 274,Social Media,20,67844,Completed
+CAMP0275,Mega Sale 275,Social Media,20,71884,Active
+CAMP0276,Festive Sale 276,Push Notification,20,30965,Scheduled
+CAMP0277,Summer Rewards 277,Push Notification,40,64889,Active
+CAMP0278,Summer Promotion 278,SMS,5,93546,Active
+CAMP0279,Festive Rewards 279,Push Notification,40,53337,Completed
+CAMP0280,Festive Offer 280,SMS,15,79893,Active
+CAMP0281,Summer Promotion 281,Email,10,60372,Scheduled
+CAMP0282,Flash Rewards 282,SMS,5,92253,Active
+CAMP0283,New Year Promotion 283,Push Notification,20,5309,Completed
+CAMP0284,New Year Offer 284,SMS,15,28556,Completed
+CAMP0285,Festive Offer 285,Email,5,10741,Completed
+CAMP0286,New Year Promotion 286,SMS,40,67196,Scheduled
+CAMP0287,Festive Offer 287,Email,10,88726,Active
+CAMP0288,New Year Rewards 288,Push Notification,10,51966,Active
+CAMP0289,Flash Rewards 289,Social Media,40,19286,Active
+CAMP0290,Summer Promotion 290,Email,25,46486,Active
+CAMP0291,Summer Rewards 291,Social Media,15,49501,Scheduled
+CAMP0292,New Year Offer 292,SMS,25,53675,Completed
+CAMP0293,Summer Sale 293,SMS,20,57112,Active
+CAMP0294,New Year Promotion 294,Social Media,10,84162,Active
+CAMP0295,Festive Rewards 295,SMS,20,18917,Active
+CAMP0296,Summer Promotion 296,Push Notification,25,26179,Scheduled
+CAMP0297,Festive Promotion 297,SMS,10,23063,Active
+CAMP0298,Flash Offer 298,Push Notification,30,51513,Completed
+CAMP0299,New Year Sale 299,Push Notification,15,93687,Scheduled
+CAMP0300,New Year Sale 300,SMS,30,94648,Active
+CAMP0301,Mega Rewards 301,Push Notification,5,61577,Completed
+CAMP0302,Flash Promotion 302,Social Media,20,76559,Scheduled
+CAMP0303,Festive Rewards 303,Email,20,25570,Completed
+CAMP0304,Festive Promotion 304,Email,10,45164,Active
+CAMP0305,New Year Rewards 305,Push Notification,40,77260,Completed
+CAMP0306,Flash Offer 306,Email,10,23139,Active
+CAMP0307,New Year Offer 307,Email,25,33521,Active
+CAMP0308,New Year Offer 308,Email,20,54389,Scheduled
+CAMP0309,Summer Offer 309,SMS,20,99643,Active
+CAMP0310,New Year Rewards 310,Social Media,20,73740,Scheduled
+CAMP0311,Festive Offer 311,Email,5,10545,Active
+CAMP0312,Summer Promotion 312,Email,20,59501,Active
+CAMP0313,Flash Promotion 313,Email,25,25937,Completed
+CAMP0314,Summer Promotion 314,Email,20,11771,Scheduled
+CAMP0315,Mega Promotion 315,Email,25,9505,Scheduled
+CAMP0316,New Year Sale 316,Push Notification,10,15694,Completed
+CAMP0317,Summer Sale 317,Push Notification,40,29273,Completed
+CAMP0318,Festive Promotion 318,SMS,25,43785,Active
+CAMP0319,Flash Offer 319,Email,20,64768,Completed
+CAMP0320,Mega Offer 320,Social Media,15,80970,Completed
+CAMP0321,New Year Sale 321,SMS,40,39501,Completed
+CAMP0322,Festive Sale 322,Social Media,40,53109,Active
+CAMP0323,Flash Rewards 323,Email,10,25442,Scheduled
+CAMP0324,Mega Promotion 324,Email,30,54236,Active
+CAMP0325,Summer Rewards 325,Social Media,5,79110,Active
+CAMP0326,Festive Offer 326,SMS,5,97177,Completed
+CAMP0327,Summer Promotion 327,Social Media,15,48424,Active
+CAMP0328,New Year Promotion 328,Email,15,51331,Completed
+CAMP0329,Flash Offer 329,Social Media,10,11317,Active
+CAMP0330,New Year Promotion 330,SMS,20,43479,Completed
+CAMP0331,Summer Rewards 331,SMS,10,60282,Completed
+CAMP0332,New Year Offer 332,Email,5,43456,Scheduled
+CAMP0333,Festive Promotion 333,Social Media,10,32092,Scheduled
+CAMP0334,Summer Promotion 334,Email,20,10732,Scheduled
+CAMP0335,Flash Rewards 335,Email,20,74825,Active
+CAMP0336,Festive Promotion 336,Push Notification,30,57274,Active
+CAMP0337,New Year Offer 337,Email,5,32393,Scheduled
+CAMP0338,New Year Sale 338,SMS,40,29655,Scheduled
+CAMP0339,Summer Sale 339,Social Media,40,47395,Completed
+CAMP0340,Mega Offer 340,Social Media,40,35560,Scheduled
+CAMP0341,Festive Rewards 341,Email,30,45094,Completed
+CAMP0342,Summer Offer 342,SMS,40,63283,Completed
+CAMP0343,New Year Rewards 343,SMS,25,43117,Active
+CAMP0344,Mega Sale 344,Social Media,5,91538,Active
+CAMP0345,Summer Rewards 345,Social Media,40,52593,Active
+CAMP0346,Festive Offer 346,SMS,25,7659,Active
+CAMP0347,Festive Offer 347,Push Notification,40,96402,Active
+CAMP0348,Flash Sale 348,Email,20,82478,Active
+CAMP0349,Summer Promotion 349,SMS,30,32119,Active
+CAMP0350,Summer Rewards 350,Email,20,6157,Completed
+CAMP0351,Summer Promotion 351,SMS,30,30022,Scheduled
+CAMP0352,Mega Rewards 352,Social Media,20,40102,Active
+CAMP0353,Festive Sale 353,SMS,15,46125,Scheduled
+CAMP0354,Flash Offer 354,SMS,40,55402,Scheduled
+CAMP0355,Mega Sale 355,Email,10,22032,Active
+CAMP0356,Summer Promotion 356,Social Media,25,88241,Completed
+CAMP0357,Mega Offer 357,Social Media,10,32120,Scheduled
+CAMP0358,Summer Rewards 358,Push Notification,10,99402,Active
+CAMP0359,Flash Offer 359,Push Notification,5,76190,Completed
+CAMP0360,Summer Rewards 360,SMS,5,45841,Active
+CAMP0361,Festive Rewards 361,Social Media,30,64012,Active
+CAMP0362,Flash Sale 362,Email,25,97417,Scheduled
+CAMP0363,Summer Offer 363,Email,30,31520,Active
+CAMP0364,Mega Promotion 364,SMS,5,62814,Active
+CAMP0365,Summer Rewards 365,Push Notification,5,93386,Completed
+CAMP0366,Flash Promotion 366,Email,30,31363,Scheduled
+CAMP0367,New Year Offer 367,Email,30,69948,Scheduled
+CAMP0368,Summer Sale 368,Email,25,39984,Active
+CAMP0369,Mega Sale 369,Social Media,10,64134,Active
+CAMP0370,Flash Offer 370,Email,15,68579,Scheduled
+CAMP0371,Festive Offer 371,Email,10,37516,Active
+CAMP0372,Festive Sale 372,SMS,25,68080,Active
+CAMP0373,Festive Offer 373,Social Media,10,81799,Active
+CAMP0374,Festive Offer 374,Email,40,85453,Scheduled
+CAMP0375,Festive Promotion 375,Social Media,5,78605,Scheduled
+CAMP0376,New Year Sale 376,SMS,15,58743,Completed
+CAMP0377,New Year Offer 377,Social Media,20,5328,Completed
+CAMP0378,Mega Offer 378,SMS,5,60692,Active
+CAMP0379,Summer Sale 379,SMS,30,69893,Completed
+CAMP0380,Festive Promotion 380,SMS,40,79754,Active
+CAMP0381,Flash Rewards 381,SMS,25,98837,Completed
+CAMP0382,Festive Sale 382,SMS,25,27338,Active
+CAMP0383,Festive Rewards 383,Email,10,46133,Active
+CAMP0384,New Year Sale 384,Push Notification,40,35289,Scheduled
+CAMP0385,Festive Promotion 385,Push Notification,30,14344,Scheduled
+CAMP0386,Summer Offer 386,Push Notification,20,39579,Completed
+CAMP0387,New Year Sale 387,Email,20,93444,Active
+CAMP0388,Summer Offer 388,SMS,10,41188,Active
+CAMP0389,Festive Sale 389,Push Notification,30,39391,Scheduled
+CAMP0390,Festive Rewards 390,Push Notification,5,99079,Active
+CAMP0391,Summer Rewards 391,Email,15,8218,Scheduled
+CAMP0392,Festive Offer 392,Social Media,30,81740,Completed
+CAMP0393,Flash Promotion 393,Push Notification,20,14432,Scheduled
+CAMP0394,New Year Offer 394,SMS,30,81759,Active
+CAMP0395,Mega Offer 395,Push Notification,10,20015,Scheduled
+CAMP0396,New Year Rewards 396,Social Media,15,81667,Scheduled
+CAMP0397,Festive Rewards 397,Social Media,10,8942,Scheduled
+CAMP0398,Flash Promotion 398,Push Notification,15,35717,Scheduled
+CAMP0399,Flash Offer 399,SMS,15,76449,Active
+CAMP0400,Summer Offer 400,Email,5,48418,Scheduled
+CAMP0401,New Year Promotion 401,Email,25,40060,Active
+CAMP0402,New Year Rewards 402,SMS,25,48274,Completed
+CAMP0403,Summer Sale 403,SMS,40,15586,Scheduled
+CAMP0404,Festive Sale 404,Social Media,40,83107,Active
+CAMP0405,Festive Sale 405,Email,20,98927,Completed
+CAMP0406,Mega Rewards 406,Email,25,90317,Completed
+CAMP0407,New Year Offer 407,Social Media,20,26932,Scheduled
+CAMP0408,Summer Offer 408,Email,30,34738,Active
+CAMP0409,Mega Offer 409,Email,20,93571,Scheduled
+CAMP0410,Festive Offer 410,SMS,15,38422,Active
+CAMP0411,Summer Sale 411,Social Media,20,12168,Scheduled
+CAMP0412,Festive Sale 412,SMS,10,80635,Scheduled
+CAMP0413,Flash Sale 413,Email,30,94552,Active
+CAMP0414,Flash Promotion 414,SMS,10,10639,Scheduled
+CAMP0415,Flash Offer 415,SMS,15,72324,Scheduled
+CAMP0416,Festive Sale 416,Email,5,27822,Scheduled
+CAMP0417,New Year Rewards 417,Push Notification,15,69689,Active
+CAMP0418,Festive Offer 418,Push Notification,15,61534,Completed
+CAMP0419,Festive Sale 419,Push Notification,25,84434,Scheduled
+CAMP0420,Mega Offer 420,SMS,25,45027,Completed
+CAMP0421,Mega Rewards 421,Push Notification,40,92237,Scheduled
+CAMP0422,Summer Rewards 422,Email,15,73452,Scheduled
+CAMP0423,Mega Sale 423,Push Notification,10,31712,Scheduled
+CAMP0424,Flash Rewards 424,Email,15,78737,Completed
+CAMP0425,Festive Promotion 425,SMS,10,28776,Scheduled
+CAMP0426,Flash Sale 426,SMS,5,42930,Scheduled
+CAMP0427,Summer Sale 427,Email,40,92256,Active
+CAMP0428,Summer Sale 428,Push Notification,25,39944,Completed
+CAMP0429,Summer Sale 429,Email,20,40469,Active
+CAMP0430,Flash Offer 430,Email,10,9505,Completed
+CAMP0431,Mega Sale 431,Social Media,30,92801,Completed
+CAMP0432,Summer Offer 432,Email,10,79445,Completed
+CAMP0433,New Year Sale 433,Social Media,5,72419,Active
+CAMP0434,New Year Promotion 434,Email,25,85826,Completed
+CAMP0435,Summer Sale 435,Push Notification,30,45903,Scheduled
+CAMP0436,Festive Promotion 436,Email,25,95395,Completed
+CAMP0437,Flash Rewards 437,Email,30,32989,Completed
+CAMP0438,Summer Promotion 438,Push Notification,30,76165,Completed
+CAMP0439,Flash Promotion 439,Push Notification,40,76241,Scheduled
+CAMP0440,Festive Sale 440,Email,25,27150,Scheduled
+CAMP0441,Mega Offer 441,Social Media,10,67479,Completed
+CAMP0442,Mega Rewards 442,Social Media,25,89474,Completed
+CAMP0443,Flash Rewards 443,Email,25,23790,Scheduled
+CAMP0444,Mega Sale 444,Push Notification,20,33024,Scheduled
+CAMP0445,Festive Offer 445,Push Notification,10,82369,Completed
+CAMP0446,Flash Sale 446,Social Media,10,64522,Scheduled
+CAMP0447,Flash Rewards 447,Email,30,31472,Active
+CAMP0448,New Year Sale 448,SMS,30,61050,Scheduled
+CAMP0449,Mega Rewards 449,SMS,25,66955,Scheduled
+CAMP0450,New Year Sale 450,SMS,40,67183,Active
+CAMP0451,Summer Sale 451,SMS,15,84920,Scheduled
+CAMP0452,Summer Promotion 452,Push Notification,25,38102,Active
+CAMP0453,Festive Rewards 453,SMS,10,55949,Active
+CAMP0454,Flash Promotion 454,Email,40,59591,Scheduled
+CAMP0455,Summer Promotion 455,Social Media,40,13246,Completed
+CAMP0456,Mega Promotion 456,Social Media,10,73481,Active
+CAMP0457,Mega Offer 457,Push Notification,20,23576,Active
+CAMP0458,New Year Rewards 458,Push Notification,40,56565,Completed
+CAMP0459,Mega Sale 459,SMS,5,15124,Scheduled
+CAMP0460,Festive Rewards 460,SMS,25,72287,Completed
+CAMP0461,Festive Promotion 461,Email,5,50453,Completed
+CAMP0462,Mega Offer 462,Social Media,30,54080,Active
+CAMP0463,Flash Promotion 463,Email,25,32271,Completed
+CAMP0464,Summer Promotion 464,Social Media,20,73297,Completed
+CAMP0465,Flash Offer 465,Push Notification,30,12456,Completed
+CAMP0466,Mega Rewards 466,Push Notification,5,83465,Scheduled
+CAMP0467,Summer Sale 467,Social Media,15,30187,Completed
+CAMP0468,New Year Sale 468,Email,25,96183,Scheduled
+CAMP0469,New Year Offer 469,SMS,25,17310,Scheduled
+CAMP0470,Festive Rewards 470,Social Media,20,53458,Completed
+CAMP0471,Mega Rewards 471,SMS,25,87676,Scheduled
+CAMP0472,Mega Promotion 472,Social Media,20,39510,Scheduled
+CAMP0473,Summer Offer 473,Social Media,25,86150,Completed
+CAMP0474,Festive Sale 474,Email,25,65629,Scheduled
+CAMP0475,Summer Promotion 475,SMS,30,74184,Completed
+CAMP0476,Summer Sale 476,Social Media,30,57819,Active
+CAMP0477,New Year Promotion 477,SMS,15,98656,Active
+CAMP0478,Mega Sale 478,SMS,10,94039,Completed
+CAMP0479,Mega Sale 479,Push Notification,25,8214,Scheduled
+CAMP0480,Flash Promotion 480,Email,30,88268,Active
+CAMP0481,Festive Rewards 481,Email,25,94178,Completed
+CAMP0482,New Year Offer 482,SMS,5,49402,Completed
+CAMP0483,Mega Offer 483,Email,20,14388,Active
+CAMP0484,New Year Offer 484,Email,25,6447,Active
+CAMP0485,Mega Sale 485,Push Notification,15,40328,Active
+CAMP0486,New Year Promotion 486,Email,30,79408,Scheduled
+CAMP0487,Festive Offer 487,Email,25,37793,Completed
+CAMP0488,Summer Offer 488,Social Media,30,34387,Scheduled
+CAMP0489,New Year Promotion 489,Social Media,20,38480,Completed
+CAMP0490,Festive Promotion 490,Social Media,25,28591,Active
+CAMP0491,New Year Promotion 491,Social Media,5,25314,Scheduled
+CAMP0492,Festive Sale 492,Email,20,23803,Scheduled
+CAMP0493,Festive Rewards 493,SMS,10,27870,Completed
+CAMP0494,Festive Promotion 494,Social Media,5,44138,Active
+CAMP0495,Mega Rewards 495,Social Media,15,77510,Active
+CAMP0496,Festive Sale 496,SMS,30,7353,Active
+CAMP0497,Flash Promotion 497,SMS,20,92863,Scheduled
+CAMP0498,Summer Rewards 498,SMS,15,7200,Scheduled
+CAMP0499,Summer Rewards 499,Push Notification,25,96732,Active
+CAMP0500,Flash Rewards 500,SMS,5,22220,Scheduled
+CAMP0501,Festive Promotion 501,Email,40,72680,Active
+CAMP0502,Flash Promotion 502,Email,25,60255,Completed
+CAMP0503,Summer Offer 503,Push Notification,10,32319,Completed
+CAMP0504,New Year Offer 504,Social Media,30,57369,Scheduled
+CAMP0505,Flash Promotion 505,SMS,40,73830,Completed
+CAMP0506,Mega Offer 506,Social Media,10,95209,Completed
+CAMP0507,Flash Offer 507,Email,5,25904,Completed
+CAMP0508,Summer Sale 508,Push Notification,10,60400,Completed
+CAMP0509,New Year Rewards 509,Push Notification,15,8869,Scheduled
+CAMP0510,Flash Rewards 510,Social Media,40,58045,Completed
+CAMP0511,Flash Promotion 511,Social Media,25,22610,Completed
+CAMP0512,Mega Sale 512,SMS,40,14256,Active
+CAMP0513,Festive Sale 513,Push Notification,30,21036,Completed
+CAMP0514,Flash Offer 514,Email,25,11553,Active
+CAMP0515,Mega Offer 515,Push Notification,20,48348,Completed
+CAMP0516,Flash Promotion 516,Email,10,99903,Completed
+CAMP0517,Festive Rewards 517,Social Media,5,42357,Active
+CAMP0518,Mega Sale 518,Social Media,5,79449,Completed
+CAMP0519,Flash Sale 519,SMS,5,99716,Active
+CAMP0520,Flash Sale 520,Email,25,87855,Scheduled
+CAMP0521,Flash Offer 521,SMS,30,17377,Scheduled
+CAMP0522,Festive Offer 522,Social Media,25,97922,Scheduled
+CAMP0523,Festive Promotion 523,Social Media,25,97609,Scheduled
+CAMP0524,Festive Promotion 524,SMS,25,51608,Completed
+CAMP0525,Mega Promotion 525,Push Notification,20,40289,Scheduled
+CAMP0526,Summer Rewards 526,SMS,30,13101,Active
+CAMP0527,Festive Offer 527,Email,20,92454,Completed
+CAMP0528,Summer Sale 528,Social Media,15,34268,Active
+CAMP0529,Summer Rewards 529,Email,40,73512,Scheduled
+CAMP0530,Mega Rewards 530,Push Notification,40,9330,Active
+CAMP0531,Summer Sale 531,Social Media,25,77395,Scheduled
+CAMP0532,Mega Offer 532,Social Media,15,25933,Completed
+CAMP0533,Festive Sale 533,SMS,25,58078,Active
+CAMP0534,Festive Rewards 534,SMS,25,34710,Scheduled
+CAMP0535,Festive Offer 535,Email,5,75168,Scheduled
+CAMP0536,New Year Promotion 536,SMS,10,80953,Completed
+CAMP0537,Festive Sale 537,Social Media,30,11623,Scheduled
+CAMP0538,New Year Sale 538,SMS,15,75170,Scheduled
+CAMP0539,Summer Sale 539,Social Media,40,10383,Active
+CAMP0540,Mega Rewards 540,SMS,40,9923,Scheduled
+CAMP0541,Flash Rewards 541,SMS,10,61772,Active
+CAMP0542,Summer Rewards 542,Social Media,30,54735,Scheduled
+CAMP0543,Mega Rewards 543,Email,10,45223,Active
+CAMP0544,Mega Sale 544,Email,30,95109,Scheduled
+CAMP0545,Summer Offer 545,Social Media,30,91021,Scheduled
+CAMP0546,Festive Sale 546,Email,40,84378,Active
+CAMP0547,Summer Sale 547,Email,15,20477,Scheduled
+CAMP0548,Flash Rewards 548,Push Notification,20,7026,Active
+CAMP0549,Summer Offer 549,Social Media,5,63667,Active
+CAMP0550,Mega Sale 550,SMS,20,91608,Completed
+CAMP0551,Festive Rewards 551,SMS,15,45535,Scheduled
+CAMP0552,Flash Rewards 552,Push Notification,20,89056,Completed
+CAMP0553,New Year Promotion 553,Social Media,30,40366,Completed
+CAMP0554,Flash Sale 554,SMS,15,90703,Scheduled
+CAMP0555,New Year Sale 555,Email,20,68416,Completed
+CAMP0556,Mega Offer 556,SMS,25,98511,Scheduled
+CAMP0557,New Year Promotion 557,Social Media,30,56801,Completed
+CAMP0558,Mega Promotion 558,SMS,25,84011,Scheduled
+CAMP0559,Festive Sale 559,Push Notification,15,56092,Scheduled
+CAMP0560,Summer Promotion 560,Push Notification,40,26520,Active
+CAMP0561,Mega Sale 561,Email,10,24735,Completed
+CAMP0562,Summer Promotion 562,Push Notification,30,58167,Scheduled
+CAMP0563,Summer Promotion 563,SMS,5,51678,Active
+CAMP0564,Festive Offer 564,SMS,10,74927,Completed
+CAMP0565,New Year Rewards 565,Email,40,51924,Active
+CAMP0566,Flash Sale 566,Email,20,47937,Scheduled
+CAMP0567,Mega Offer 567,Email,25,15840,Active
+CAMP0568,New Year Offer 568,Social Media,30,10159,Scheduled
+CAMP0569,Festive Offer 569,Social Media,5,36812,Completed
+CAMP0570,Festive Offer 570,Social Media,5,61998,Scheduled
+CAMP0571,Summer Offer 571,Push Notification,25,37516,Active
+CAMP0572,New Year Promotion 572,SMS,30,73749,Completed
+CAMP0573,Flash Promotion 573,Push Notification,40,71752,Active
+CAMP0574,New Year Sale 574,SMS,25,80554,Active
+CAMP0575,Summer Promotion 575,Push Notification,40,59224,Active
+CAMP0576,Summer Promotion 576,Email,5,70235,Active
+CAMP0577,Festive Rewards 577,Social Media,25,78056,Completed
+CAMP0578,Summer Promotion 578,SMS,5,88833,Completed
+CAMP0579,Summer Promotion 579,SMS,25,22631,Active
+CAMP0580,Festive Rewards 580,SMS,40,93858,Active
+CAMP0581,New Year Rewards 581,Push Notification,20,57318,Scheduled
+CAMP0582,New Year Sale 582,Push Notification,25,10200,Scheduled
+CAMP0583,Mega Sale 583,SMS,10,36894,Completed
+CAMP0584,Summer Offer 584,Email,25,42892,Completed
+CAMP0585,New Year Sale 585,Email,10,76909,Scheduled
+CAMP0586,Summer Offer 586,Email,15,47738,Active
+CAMP0587,Summer Offer 587,Social Media,10,75368,Active
+CAMP0588,Flash Rewards 588,SMS,5,95036,Active
+CAMP0589,New Year Sale 589,Email,15,35203,Active
+CAMP0590,Summer Rewards 590,SMS,30,15807,Completed
+CAMP0591,Festive Rewards 591,Email,40,13450,Scheduled
+CAMP0592,Summer Promotion 592,SMS,25,10786,Completed
+CAMP0593,Festive Sale 593,Social Media,10,81589,Active
+CAMP0594,Festive Offer 594,SMS,30,44957,Active
+CAMP0595,Flash Promotion 595,Email,25,59588,Completed
+CAMP0596,Flash Sale 596,SMS,20,16627,Completed
+CAMP0597,New Year Offer 597,Push Notification,10,9564,Active
+CAMP0598,New Year Sale 598,Email,30,48250,Active
+CAMP0599,New Year Rewards 599,SMS,30,15543,Active
+CAMP0600,New Year Offer 600,Email,25,54036,Active
+CAMP0601,Mega Offer 601,SMS,30,86629,Completed
+CAMP0602,Mega Promotion 602,Social Media,5,11924,Completed
+CAMP0603,Flash Sale 603,Social Media,10,43958,Completed
+CAMP0604,Summer Offer 604,Email,5,53082,Completed
+CAMP0605,Flash Sale 605,Email,10,70560,Active
+CAMP0606,Mega Rewards 606,Email,10,42427,Active
+CAMP0607,Festive Promotion 607,SMS,30,49133,Scheduled
+CAMP0608,Flash Offer 608,Social Media,15,73902,Active
+CAMP0609,New Year Offer 609,Social Media,25,15736,Completed
+CAMP0610,New Year Sale 610,Email,40,22835,Completed
+CAMP0611,Festive Offer 611,Email,30,26830,Active
+CAMP0612,Flash Sale 612,Social Media,25,5084,Completed
+CAMP0613,Summer Sale 613,SMS,15,84145,Active
+CAMP0614,Flash Rewards 614,SMS,20,95741,Scheduled
+CAMP0615,Summer Sale 615,Email,30,43850,Scheduled
+CAMP0616,Mega Promotion 616,SMS,30,97582,Active
+CAMP0617,Mega Sale 617,Push Notification,30,34694,Scheduled
+CAMP0618,Flash Promotion 618,Push Notification,15,55766,Scheduled
+CAMP0619,Mega Offer 619,Social Media,25,23979,Scheduled
+CAMP0620,Summer Rewards 620,Push Notification,30,67416,Scheduled
+CAMP0621,Flash Offer 621,Social Media,20,14580,Active
+CAMP0622,New Year Rewards 622,Push Notification,25,81853,Scheduled
+CAMP0623,Mega Rewards 623,Push Notification,20,96667,Active
+CAMP0624,Flash Rewards 624,Push Notification,10,26588,Completed
+CAMP0625,Summer Promotion 625,Push Notification,5,34355,Active
+CAMP0626,Festive Promotion 626,Push Notification,30,47816,Active
+CAMP0627,Mega Rewards 627,Social Media,40,94012,Scheduled
+CAMP0628,Mega Offer 628,Push Notification,30,44322,Active
+CAMP0629,Festive Promotion 629,Push Notification,15,84561,Active
+CAMP0630,Mega Sale 630,SMS,30,83677,Scheduled
+CAMP0631,Flash Sale 631,Email,20,65591,Completed
+CAMP0632,Mega Promotion 632,Social Media,25,92490,Active
+CAMP0633,Mega Offer 633,Social Media,30,51899,Completed
+CAMP0634,Festive Offer 634,Push Notification,10,26804,Active
+CAMP0635,Summer Offer 635,Social Media,20,30586,Completed
+CAMP0636,Festive Promotion 636,Social Media,25,63012,Scheduled
+CAMP0637,Festive Rewards 637,SMS,10,54905,Active
+CAMP0638,New Year Sale 638,Social Media,25,34395,Scheduled
+CAMP0639,New Year Sale 639,Social Media,15,72468,Completed
+CAMP0640,Mega Rewards 640,Email,30,83861,Scheduled
+CAMP0641,Festive Rewards 641,Push Notification,25,48392,Completed
+CAMP0642,Summer Rewards 642,Social Media,5,17239,Completed
+CAMP0643,New Year Sale 643,Email,15,11293,Active
+CAMP0644,New Year Offer 644,Push Notification,40,68988,Active
+CAMP0645,Festive Promotion 645,Social Media,10,16837,Active
+CAMP0646,Mega Offer 646,SMS,5,91729,Active
+CAMP0647,Mega Offer 647,SMS,10,83867,Active
+CAMP0648,Flash Promotion 648,Push Notification,30,49005,Scheduled
+CAMP0649,Festive Offer 649,Email,40,84772,Scheduled
+CAMP0650,Mega Sale 650,Push Notification,5,39022,Scheduled
+CAMP0651,Flash Sale 651,Social Media,15,89997,Active
+CAMP0652,Flash Rewards 652,Email,20,99701,Active
+CAMP0653,Summer Offer 653,SMS,25,63747,Completed
+CAMP0654,Mega Rewards 654,Push Notification,30,45378,Scheduled
+CAMP0655,Flash Sale 655,Social Media,25,27284,Completed
+CAMP0656,Mega Offer 656,SMS,40,92713,Active
+CAMP0657,New Year Promotion 657,Email,15,20145,Scheduled
+CAMP0658,Mega Offer 658,SMS,25,61709,Scheduled
+CAMP0659,New Year Promotion 659,Push Notification,5,42878,Active
+CAMP0660,Summer Rewards 660,Social Media,25,33615,Completed
+CAMP0661,Mega Rewards 661,Email,25,80252,Scheduled
+CAMP0662,Flash Rewards 662,SMS,30,96546,Scheduled
+CAMP0663,Summer Offer 663,SMS,30,13913,Active
+CAMP0664,Summer Rewards 664,SMS,30,68584,Completed
+CAMP0665,New Year Sale 665,SMS,10,34653,Active
+CAMP0666,Festive Offer 666,Push Notification,40,66957,Scheduled
+CAMP0667,Mega Promotion 667,Push Notification,5,38641,Active
+CAMP0668,Mega Promotion 668,SMS,5,63214,Scheduled
+CAMP0669,Summer Promotion 669,Push Notification,30,35096,Active
+CAMP0670,Festive Promotion 670,Push Notification,15,75854,Active
+CAMP0671,New Year Offer 671,Social Media,40,39803,Active
+CAMP0672,Festive Promotion 672,SMS,15,49801,Scheduled
+CAMP0673,Mega Promotion 673,SMS,5,36017,Completed
+CAMP0674,Summer Sale 674,SMS,5,65174,Active
+CAMP0675,Festive Rewards 675,SMS,30,47728,Active
+CAMP0676,Festive Sale 676,Push Notification,15,76143,Scheduled
+CAMP0677,Summer Rewards 677,Social Media,40,13350,Scheduled
+CAMP0678,Mega Rewards 678,Social Media,10,6097,Scheduled
+CAMP0679,New Year Sale 679,Social Media,25,76483,Scheduled
+CAMP0680,Summer Sale 680,SMS,5,30835,Active
+CAMP0681,New Year Offer 681,Push Notification,30,23370,Active
+CAMP0682,Summer Sale 682,Social Media,15,75336,Active
+CAMP0683,Festive Promotion 683,Email,20,63407,Active
+CAMP0684,Summer Sale 684,SMS,30,51673,Scheduled
+CAMP0685,Summer Rewards 685,Push Notification,15,91123,Active
+CAMP0686,Mega Sale 686,SMS,15,20031,Scheduled
+CAMP0687,Mega Promotion 687,SMS,10,28784,Scheduled
+CAMP0688,Summer Promotion 688,Social Media,30,18118,Scheduled
+CAMP0689,Mega Sale 689,Social Media,40,16973,Completed
+CAMP0690,Flash Sale 690,Email,15,8902,Active
+CAMP0691,New Year Rewards 691,Social Media,20,78575,Scheduled
+CAMP0692,Festive Offer 692,Email,10,81216,Scheduled
+CAMP0693,Mega Rewards 693,Email,40,36639,Scheduled
+CAMP0694,New Year Offer 694,Social Media,15,24399,Completed
+CAMP0695,Summer Promotion 695,Push Notification,15,28000,Scheduled
+CAMP0696,Festive Promotion 696,SMS,10,50014,Active
+CAMP0697,Flash Sale 697,Push Notification,40,60128,Scheduled
+CAMP0698,New Year Rewards 698,Social Media,15,41017,Scheduled
+CAMP0699,New Year Promotion 699,SMS,25,84925,Scheduled
+CAMP0700,New Year Offer 700,Push Notification,20,5422,Completed
+CAMP0701,Summer Rewards 701,Push Notification,10,54992,Completed
+CAMP0702,Festive Rewards 702,SMS,30,35342,Scheduled
+CAMP0703,New Year Offer 703,SMS,15,13309,Scheduled
+CAMP0704,Mega Offer 704,Email,25,89959,Completed
+CAMP0705,Flash Sale 705,Push Notification,30,46493,Scheduled
+CAMP0706,Mega Sale 706,SMS,15,51791,Completed
+CAMP0707,New Year Rewards 707,Push Notification,15,36608,Completed
+CAMP0708,New Year Sale 708,SMS,40,36119,Scheduled
+CAMP0709,Festive Sale 709,Push Notification,25,11549,Scheduled
+CAMP0710,Flash Sale 710,SMS,5,75126,Scheduled
+CAMP0711,New Year Promotion 711,Social Media,25,37858,Completed
+CAMP0712,Summer Offer 712,Social Media,30,85653,Active
+CAMP0713,Festive Offer 713,Push Notification,10,75704,Scheduled
+CAMP0714,New Year Offer 714,Email,10,78111,Completed
+CAMP0715,Summer Offer 715,Push Notification,5,73675,Scheduled
+CAMP0716,Flash Promotion 716,Email,10,94876,Completed
+CAMP0717,Festive Offer 717,Push Notification,5,63105,Completed
+CAMP0718,Flash Rewards 718,Email,25,61063,Completed
+CAMP0719,Summer Rewards 719,Social Media,15,72710,Scheduled
+CAMP0720,Mega Sale 720,Social Media,40,7066,Active
+CAMP0721,New Year Sale 721,Social Media,40,16921,Scheduled
+CAMP0722,Festive Offer 722,Email,15,40826,Active
+CAMP0723,Summer Sale 723,Push Notification,5,94962,Active
+CAMP0724,Mega Offer 724,Email,40,86285,Active
+CAMP0725,Summer Rewards 725,SMS,15,24657,Completed
+CAMP0726,Summer Offer 726,SMS,5,40399,Completed
+CAMP0727,New Year Offer 727,Social Media,10,18251,Completed
+CAMP0728,Mega Promotion 728,Email,10,96591,Completed
+CAMP0729,Festive Rewards 729,SMS,20,46824,Completed
+CAMP0730,New Year Promotion 730,Email,20,16024,Completed
+CAMP0731,New Year Sale 731,SMS,10,68796,Scheduled
+CAMP0732,Festive Offer 732,Email,30,43228,Active
+CAMP0733,New Year Sale 733,SMS,10,86010,Active
+CAMP0734,Mega Promotion 734,Email,10,15927,Active
+CAMP0735,Flash Promotion 735,Email,20,46851,Completed
+CAMP0736,Mega Sale 736,Push Notification,25,59777,Completed
+CAMP0737,Festive Promotion 737,Social Media,15,31840,Completed
+CAMP0738,Summer Offer 738,Social Media,15,26376,Active
+CAMP0739,New Year Promotion 739,Social Media,30,94451,Completed
+CAMP0740,Mega Sale 740,SMS,40,90270,Active
+CAMP0741,Summer Rewards 741,Push Notification,20,75786,Scheduled
+CAMP0742,Flash Promotion 742,Email,30,76761,Completed
+CAMP0743,Summer Offer 743,Email,15,43667,Active
+CAMP0744,New Year Offer 744,Email,5,15108,Completed
+CAMP0745,Flash Sale 745,SMS,20,50381,Completed
+CAMP0746,New Year Rewards 746,Email,10,27930,Scheduled
+CAMP0747,Mega Sale 747,Social Media,25,33677,Completed
+CAMP0748,Festive Rewards 748,Social Media,40,95680,Active
+CAMP0749,New Year Offer 749,Social Media,5,21154,Completed
+CAMP0750,Festive Sale 750,Social Media,5,24900,Active
+CAMP0751,Summer Offer 751,SMS,20,12997,Scheduled
+CAMP0752,Summer Rewards 752,SMS,10,78429,Active
+CAMP0753,Mega Offer 753,Social Media,10,33217,Scheduled
+CAMP0754,Summer Offer 754,Social Media,5,36252,Scheduled
+CAMP0755,Flash Rewards 755,Email,40,36624,Active
+CAMP0756,Festive Promotion 756,Push Notification,40,31937,Scheduled
+CAMP0757,New Year Rewards 757,SMS,40,73779,Completed
+CAMP0758,Festive Rewards 758,SMS,10,51798,Active
+CAMP0759,Festive Offer 759,Email,30,19620,Scheduled
+CAMP0760,Summer Offer 760,Social Media,30,7784,Active
+CAMP0761,Mega Promotion 761,Push Notification,10,63696,Active
+CAMP0762,New Year Sale 762,SMS,10,25045,Active
+CAMP0763,Flash Offer 763,SMS,15,52612,Active
+CAMP0764,Mega Rewards 764,Social Media,25,98404,Completed
+CAMP0765,Summer Rewards 765,SMS,30,49165,Scheduled
+CAMP0766,Mega Rewards 766,Push Notification,20,33994,Completed
+CAMP0767,New Year Sale 767,SMS,20,44846,Active
+CAMP0768,New Year Rewards 768,Push Notification,15,28174,Scheduled
+CAMP0769,Summer Rewards 769,SMS,15,51382,Active
+CAMP0770,New Year Offer 770,Email,20,98750,Scheduled
+CAMP0771,New Year Offer 771,Email,40,8594,Completed
+CAMP0772,Summer Promotion 772,Email,20,85530,Completed
+CAMP0773,Summer Rewards 773,Email,10,6148,Active
+CAMP0774,Mega Offer 774,SMS,15,63737,Completed
+CAMP0775,Summer Offer 775,Social Media,40,40636,Active
+CAMP0776,Festive Offer 776,SMS,15,91989,Scheduled
+CAMP0777,Flash Promotion 777,Push Notification,30,44748,Completed
+CAMP0778,Festive Sale 778,SMS,25,65435,Scheduled
+CAMP0779,New Year Promotion 779,Social Media,5,6465,Scheduled
+CAMP0780,Summer Promotion 780,Social Media,25,51088,Active
+CAMP0781,Mega Rewards 781,Push Notification,40,75782,Completed
+CAMP0782,Summer Promotion 782,Email,30,57874,Completed
+CAMP0783,New Year Offer 783,Social Media,10,61268,Active
+CAMP0784,Summer Offer 784,Social Media,40,5889,Scheduled
+CAMP0785,Summer Offer 785,Email,10,70066,Completed
+CAMP0786,Flash Rewards 786,Email,10,68400,Active
+CAMP0787,New Year Sale 787,SMS,25,21963,Scheduled
+CAMP0788,Mega Promotion 788,Email,40,37931,Completed
+CAMP0789,Festive Rewards 789,Push Notification,40,67185,Active
+CAMP0790,Mega Promotion 790,Social Media,5,27382,Completed
+CAMP0791,Mega Sale 791,Email,5,11743,Active
+CAMP0792,Festive Offer 792,Social Media,10,10878,Scheduled
+CAMP0793,Summer Promotion 793,Push Notification,10,95538,Scheduled
+CAMP0794,Summer Offer 794,Email,5,23752,Active
+CAMP0795,Mega Rewards 795,Email,5,31962,Scheduled
+CAMP0796,Mega Promotion 796,Email,15,63233,Completed
+CAMP0797,Mega Promotion 797,Email,40,37469,Completed
+CAMP0798,Festive Promotion 798,Email,20,83735,Active
+CAMP0799,Mega Promotion 799,SMS,25,22495,Completed
+CAMP0800,Mega Sale 800,Push Notification,25,14494,Completed
+CAMP0801,Summer Promotion 801,Push Notification,30,26627,Completed
+CAMP0802,Flash Rewards 802,SMS,20,46411,Active
+CAMP0803,Mega Rewards 803,SMS,20,21424,Active
+CAMP0804,Summer Rewards 804,Email,15,63292,Scheduled
+CAMP0805,Summer Promotion 805,Email,5,9280,Scheduled
+CAMP0806,Festive Offer 806,Social Media,5,70183,Active
+CAMP0807,Mega Rewards 807,Email,15,19127,Scheduled
+CAMP0808,New Year Rewards 808,Push Notification,5,9880,Completed
+CAMP0809,New Year Offer 809,Email,15,70656,Active
+CAMP0810,Mega Offer 810,SMS,10,66649,Scheduled
+CAMP0811,Summer Rewards 811,Social Media,15,30516,Scheduled
+CAMP0812,Flash Rewards 812,Email,10,93841,Active
+CAMP0813,Summer Sale 813,SMS,10,73830,Active
+CAMP0814,New Year Rewards 814,Email,10,32249,Scheduled
+CAMP0815,Mega Rewards 815,Email,30,51115,Active
+CAMP0816,New Year Offer 816,Push Notification,20,52685,Active
+CAMP0817,Mega Rewards 817,SMS,40,94081,Scheduled
+CAMP0818,Mega Rewards 818,SMS,40,61600,Active
+CAMP0819,Festive Offer 819,SMS,20,85440,Active
+CAMP0820,Flash Offer 820,Push Notification,30,81815,Active
+CAMP0821,New Year Sale 821,Social Media,5,29115,Scheduled
+CAMP0822,Mega Promotion 822,Email,10,23932,Scheduled
+CAMP0823,Mega Sale 823,Push Notification,20,35530,Scheduled
+CAMP0824,New Year Offer 824,SMS,10,89522,Active
+CAMP0825,Festive Promotion 825,Social Media,30,25758,Scheduled
+CAMP0826,Summer Promotion 826,Push Notification,20,32756,Scheduled
+CAMP0827,Summer Promotion 827,SMS,20,87752,Active
+CAMP0828,New Year Rewards 828,Push Notification,25,53956,Scheduled
+CAMP0829,Mega Promotion 829,Social Media,25,19337,Scheduled
+CAMP0830,New Year Sale 830,SMS,10,55260,Completed
+CAMP0831,Summer Sale 831,Email,20,27104,Scheduled
+CAMP0832,Festive Promotion 832,Push Notification,40,57356,Active
+CAMP0833,Mega Offer 833,SMS,25,25817,Scheduled
+CAMP0834,Flash Promotion 834,SMS,5,11043,Scheduled
+CAMP0835,Flash Promotion 835,Email,10,22210,Completed
+CAMP0836,Festive Rewards 836,SMS,40,34598,Active
+CAMP0837,New Year Rewards 837,Social Media,20,10973,Active
+CAMP0838,Festive Offer 838,SMS,40,43160,Active
+CAMP0839,Flash Promotion 839,SMS,20,78490,Scheduled
+CAMP0840,Festive Offer 840,SMS,40,29502,Active
+CAMP0841,Festive Promotion 841,SMS,25,65015,Completed
+CAMP0842,New Year Offer 842,Push Notification,5,49495,Completed
+CAMP0843,Festive Sale 843,Push Notification,10,39169,Scheduled
+CAMP0844,Flash Rewards 844,Push Notification,10,20933,Scheduled
+CAMP0845,Festive Promotion 845,Push Notification,25,74486,Scheduled
+CAMP0846,Summer Promotion 846,Social Media,15,51064,Scheduled
+CAMP0847,Festive Promotion 847,Social Media,40,45414,Active
+CAMP0848,New Year Offer 848,Social Media,5,51417,Scheduled
+CAMP0849,Flash Rewards 849,Push Notification,5,99320,Active
+CAMP0850,Festive Offer 850,Push Notification,10,99414,Completed
+CAMP0851,New Year Offer 851,Social Media,40,65986,Scheduled
+CAMP0852,Festive Promotion 852,SMS,15,87544,Active
+CAMP0853,Mega Promotion 853,Email,20,58315,Active
+CAMP0854,Summer Offer 854,Social Media,20,41906,Active
+CAMP0855,Mega Sale 855,Email,15,96670,Active
+CAMP0856,Mega Rewards 856,Email,30,83462,Completed
+CAMP0857,Flash Promotion 857,Email,25,30674,Active
+CAMP0858,Summer Rewards 858,SMS,20,18018,Scheduled
+CAMP0859,Mega Promotion 859,SMS,10,69893,Active
+CAMP0860,New Year Promotion 860,Push Notification,25,46212,Completed
+CAMP0861,Summer Promotion 861,Push Notification,5,98508,Scheduled
+CAMP0862,New Year Promotion 862,SMS,30,43650,Completed
+CAMP0863,Flash Offer 863,SMS,25,8604,Completed
+CAMP0864,Summer Offer 864,Push Notification,25,37331,Active
+CAMP0865,Flash Sale 865,Email,10,29503,Scheduled
+CAMP0866,Mega Sale 866,Social Media,25,99609,Active
+CAMP0867,Summer Rewards 867,Push Notification,5,52216,Scheduled
+CAMP0868,Mega Rewards 868,Social Media,10,46587,Scheduled
+CAMP0869,Festive Sale 869,Email,25,45170,Completed
+CAMP0870,Festive Promotion 870,Push Notification,20,58948,Completed
+CAMP0871,Mega Offer 871,Email,40,20758,Completed
+CAMP0872,Flash Sale 872,Push Notification,10,72052,Scheduled
+CAMP0873,Summer Promotion 873,Email,20,90411,Scheduled
+CAMP0874,Festive Rewards 874,Email,10,13777,Scheduled
+CAMP0875,Flash Sale 875,Push Notification,30,51510,Active
+CAMP0876,Flash Promotion 876,Email,20,98413,Scheduled
+CAMP0877,New Year Sale 877,Social Media,30,24523,Completed
+CAMP0878,Flash Promotion 878,Social Media,5,10750,Completed
+CAMP0879,Festive Sale 879,SMS,40,66882,Completed
+CAMP0880,Festive Offer 880,SMS,40,9971,Scheduled
+CAMP0881,Flash Offer 881,Social Media,10,62790,Completed
+CAMP0882,New Year Rewards 882,SMS,10,14423,Active
+CAMP0883,Mega Sale 883,SMS,20,84092,Completed
+CAMP0884,Festive Rewards 884,SMS,30,34038,Scheduled
+CAMP0885,New Year Promotion 885,Email,10,67328,Completed
+CAMP0886,Summer Sale 886,Social Media,20,87224,Active
+CAMP0887,Mega Promotion 887,Push Notification,25,58734,Scheduled
+CAMP0888,Festive Sale 888,Social Media,10,98365,Completed
+CAMP0889,Flash Sale 889,Social Media,15,89460,Active
+CAMP0890,Summer Promotion 890,SMS,30,21480,Scheduled
+CAMP0891,Festive Rewards 891,SMS,10,89709,Scheduled
+CAMP0892,New Year Sale 892,Push Notification,15,81362,Completed
+CAMP0893,Mega Rewards 893,Social Media,15,67457,Completed
+CAMP0894,Mega Sale 894,Email,25,48337,Completed
+CAMP0895,Mega Offer 895,Email,15,97639,Completed
+CAMP0896,New Year Sale 896,Push Notification,20,42944,Completed
+CAMP0897,Flash Promotion 897,Push Notification,30,22801,Active
+CAMP0898,Festive Offer 898,Email,20,74327,Completed
+CAMP0899,Mega Promotion 899,Email,40,87298,Scheduled
+CAMP0900,New Year Offer 900,Email,10,69774,Scheduled
+CAMP0901,Festive Promotion 901,Email,5,30757,Scheduled
+CAMP0902,Mega Rewards 902,Email,25,19467,Scheduled
+CAMP0903,New Year Sale 903,Social Media,40,46476,Completed
+CAMP0904,Flash Rewards 904,Social Media,25,15642,Completed
+CAMP0905,New Year Rewards 905,Email,30,81088,Active
+CAMP0906,Flash Promotion 906,Email,25,99135,Active
+CAMP0907,Festive Offer 907,Social Media,25,32380,Active
+CAMP0908,New Year Promotion 908,SMS,25,79017,Active
+CAMP0909,Mega Promotion 909,Social Media,5,17682,Active
+CAMP0910,Flash Promotion 910,Email,30,99374,Scheduled
+CAMP0911,Mega Rewards 911,Push Notification,10,67326,Completed
+CAMP0912,Flash Promotion 912,Email,30,57036,Scheduled
+CAMP0913,Mega Promotion 913,SMS,10,50382,Active
+CAMP0914,Festive Offer 914,Email,25,15698,Completed
+CAMP0915,Flash Sale 915,SMS,5,92390,Active
+CAMP0916,Summer Rewards 916,SMS,5,23260,Active
+CAMP0917,Flash Sale 917,SMS,40,86234,Completed
+CAMP0918,Festive Sale 918,Social Media,5,70676,Completed
+CAMP0919,Summer Sale 919,Social Media,15,84453,Scheduled
+CAMP0920,Festive Promotion 920,SMS,20,30462,Scheduled
+CAMP0921,Flash Offer 921,SMS,5,80029,Completed
+CAMP0922,Mega Offer 922,Email,15,73878,Active
+CAMP0923,Summer Offer 923,Email,25,47658,Completed
+CAMP0924,Festive Sale 924,Social Media,15,18905,Scheduled
+CAMP0925,Flash Promotion 925,Social Media,20,76366,Completed
+CAMP0926,Summer Offer 926,SMS,5,58790,Active
+CAMP0927,Summer Promotion 927,Social Media,20,42954,Active
+CAMP0928,Flash Rewards 928,SMS,10,93290,Scheduled
+CAMP0929,Summer Offer 929,Social Media,20,39972,Completed
+CAMP0930,New Year Offer 930,Push Notification,5,72877,Scheduled
+CAMP0931,Summer Promotion 931,Social Media,30,57046,Completed
+CAMP0932,Flash Promotion 932,Social Media,25,66253,Scheduled
+CAMP0933,Mega Rewards 933,SMS,30,37878,Active
+CAMP0934,New Year Rewards 934,Push Notification,40,89879,Active
+CAMP0935,Festive Rewards 935,Email,20,48887,Completed
+CAMP0936,Festive Rewards 936,Social Media,40,75246,Completed
+CAMP0937,New Year Rewards 937,Push Notification,10,24771,Scheduled
+CAMP0938,Flash Rewards 938,Email,30,92861,Scheduled
+CAMP0939,Festive Sale 939,Push Notification,15,39860,Scheduled
+CAMP0940,Festive Promotion 940,Push Notification,10,11741,Scheduled
+CAMP0941,Mega Offer 941,Email,15,52697,Scheduled
+CAMP0942,Flash Promotion 942,Email,40,89739,Active
+CAMP0943,Festive Sale 943,SMS,30,61611,Active
+CAMP0944,Mega Offer 944,SMS,30,34651,Active
+CAMP0945,Festive Sale 945,SMS,10,28635,Scheduled
+CAMP0946,Festive Offer 946,Push Notification,40,22546,Scheduled
+CAMP0947,Summer Offer 947,Social Media,5,6664,Active
+CAMP0948,Festive Offer 948,Social Media,15,6861,Active
+CAMP0949,Summer Promotion 949,Social Media,5,7831,Scheduled
+CAMP0950,Mega Sale 950,Email,40,71102,Scheduled
+CAMP0951,Summer Rewards 951,Social Media,20,30780,Active
+CAMP0952,Summer Sale 952,Email,30,62367,Active
+CAMP0953,Mega Offer 953,Push Notification,15,27078,Scheduled
+CAMP0954,New Year Promotion 954,Push Notification,20,68306,Completed
+CAMP0955,New Year Offer 955,Push Notification,30,84937,Scheduled
+CAMP0956,Festive Rewards 956,SMS,25,44171,Completed
+CAMP0957,Flash Sale 957,Social Media,10,26415,Scheduled
+CAMP0958,Mega Offer 958,Push Notification,10,47992,Completed
+CAMP0959,New Year Rewards 959,Email,30,93018,Active
+CAMP0960,Mega Sale 960,SMS,40,69678,Completed
+CAMP0961,New Year Offer 961,SMS,10,86544,Active
+CAMP0962,Festive Promotion 962,Social Media,40,5891,Active
+CAMP0963,New Year Rewards 963,Push Notification,25,69412,Completed
+CAMP0964,Flash Promotion 964,Social Media,40,70916,Active
+CAMP0965,Flash Promotion 965,Push Notification,25,99416,Scheduled
+CAMP0966,New Year Offer 966,Social Media,30,53116,Active
+CAMP0967,New Year Offer 967,Social Media,30,42607,Completed
+CAMP0968,Mega Sale 968,SMS,5,41740,Active
+CAMP0969,Flash Offer 969,SMS,15,61230,Scheduled
+CAMP0970,Mega Sale 970,Push Notification,30,42850,Completed
+CAMP0971,Mega Rewards 971,SMS,15,12211,Active
+CAMP0972,New Year Offer 972,SMS,15,72214,Scheduled
+CAMP0973,Summer Rewards 973,Email,40,60800,Active
+CAMP0974,Summer Offer 974,Push Notification,20,87410,Active
+CAMP0975,New Year Sale 975,Social Media,25,99013,Completed
+CAMP0976,New Year Offer 976,Social Media,25,96220,Completed
+CAMP0977,Summer Rewards 977,Social Media,40,10159,Active
+CAMP0978,Festive Offer 978,Email,25,94882,Active
+CAMP0979,New Year Offer 979,SMS,40,49758,Active
+CAMP0980,Mega Offer 980,SMS,40,76117,Scheduled
+CAMP0981,Summer Promotion 981,Social Media,10,85780,Completed
+CAMP0982,Festive Offer 982,Social Media,20,85808,Active
+CAMP0983,Festive Offer 983,Social Media,25,41185,Completed
+CAMP0984,New Year Offer 984,Email,25,67952,Active
+CAMP0985,Summer Rewards 985,Social Media,15,54593,Scheduled
+CAMP0986,Flash Sale 986,SMS,15,24105,Scheduled
+CAMP0987,Flash Offer 987,Email,25,73166,Active
+CAMP0988,Mega Offer 988,Social Media,10,69769,Scheduled
+CAMP0989,Festive Offer 989,SMS,25,88277,Active
+CAMP0990,Flash Promotion 990,Push Notification,15,37045,Active
+CAMP0991,Festive Offer 991,Email,20,76152,Completed
+CAMP0992,Flash Promotion 992,SMS,10,83141,Completed
+CAMP0993,Flash Rewards 993,SMS,5,45722,Completed
+CAMP0994,Summer Rewards 994,SMS,20,55447,Active
+CAMP0995,New Year Rewards 995,SMS,40,97192,Completed
+CAMP0996,Festive Offer 996,Email,20,13389,Active
+CAMP0997,New Year Promotion 997,Email,40,92664,Completed
+CAMP0998,Festive Sale 998,Push Notification,10,86964,Active
+CAMP0999,Mega Promotion 999,Email,10,93779,Active
+CAMP1000,Flash Promotion 1000,Email,40,30818,Active

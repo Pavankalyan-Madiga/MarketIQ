@@ -1,0 +1,11 @@
+customer_id,name,email,city,age,gender,signup_date,total_orders,total_spent,last_purchase_date
+CUST1001,Aarav Sharma,aarav.sharma@example.com,Hyderabad,24,Male,2025-01-15,8,12450.5,2026-10-12
+CUST1002,Ananya Reddy,ananya.reddy@example.com,Bengaluru,29,Female,2024-08-21,14,28790.0,2026-11-02
+CUST1003,Rahul Verma,rahul.verma@example.com,Chennai,35,Male,2023-11-03,3,3499.0,2026-06-18
+CUST1004,Priya Nair,priya.nair@example.com,Kochi,27,Female,2025-05-09,6,9100.75,2026-09-27
+CUST1005,Ishaan Patel,ishaan.patel@example.com,Pune,42,Male,2022-02-14,21,56320.0,2026-11-15
+CUST1006,Meera Iyer,meera.iyer@example.com,Mumbai,31,Female,2024-04-30,11,19875.25,2026-10-29
+CUST1007,Karthik Rao,karthik.rao@example.com,Vijayawada,23,Male,2025-07-19,2,1599.0,2026-03-11
+CUST1008,Sana Khan,sana.khan@example.com,Delhi,38,Female,2023-06-07,17,41200.0,2026-11-08
+CUST1009,Vikram Singh,vikram.singh@example.com,Jaipur,46,Male,2022-09-25,5,7200.0,2026-08-14
+CUST1010,Diya Menon,diya.menon@example.com,Visakhapatnam,26,Female,2025-03-12,9,15340.0,2026-10-05
