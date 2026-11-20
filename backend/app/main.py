@@ -9,7 +9,7 @@ import csv
 import io
 import re
 import uuid
-
+import os
 from app.database.connection import engine, test_connection
 from app.api.churn import router as churn_router
 
@@ -23,17 +23,24 @@ app = FastAPI(
 app.include_router(churn_router)
 app.include_router(sentiment_router)
 
+# CORS Configuration
+allowed_origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+
+frontend_url = os.getenv("FRONTEND_URL")
+
+if frontend_url:
+    allowed_origins.append(frontend_url.rstrip("/"))
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.get("/")
 def home():

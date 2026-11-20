@@ -17,7 +17,18 @@ if not DATABASE_URL:
 
 DATA_DIR = os.path.join(BASE_DIR, "datasets", "raw")
 
-engine = create_engine(DATABASE_URL, pool_pre_ping=True)
+# Explicitly use Psycopg 2 with SQLAlchemy 2.1
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace(
+        "postgresql://",
+        "postgresql+psycopg2://",
+        1
+    )
+
+engine = create_engine(
+    DATABASE_URL,
+    pool_pre_ping=True,
+)
 
 # Import order: parent tables before child tables
 tables = [
