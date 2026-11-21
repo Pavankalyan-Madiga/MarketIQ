@@ -1,6 +1,8 @@
 
 from pathlib import Path
 import json
+import time
+from threading import Lock
 
 import joblib
 import pandas as pd
@@ -42,6 +44,20 @@ def get_model():
         _model = joblib.load(MODEL_PATH)
 
     return _model
+
+
+# --------------------------------------------------
+# PREDICTION CACHE
+# --------------------------------------------------
+
+_prediction_cache = {
+    "data": None,
+    "created_at": 0,
+}
+
+_prediction_cache_lock = Lock()
+
+CACHE_TTL = 300  # 5 minutes
 
 
 # --------------------------------------------------
@@ -307,6 +323,36 @@ def make_predictions(df):
 
 
 # --------------------------------------------------
+# GET CACHED PREDICTIONS
+# --------------------------------------------------
+
+def get_cached_predictions():
+
+    with _prediction_cache_lock:
+
+        current_time = time.monotonic()
+
+        cached_data = _prediction_cache["data"]
+
+        # Return cached predictions if still valid.
+        if (
+            cached_data is not None
+            and current_time - _prediction_cache["created_at"] < CACHE_TTL
+        ):
+            return cached_data
+
+        # Cache expired or not initialized.
+        df = get_customer_features()
+
+        predictions = make_predictions(df)
+
+        _prediction_cache["data"] = predictions
+        _prediction_cache["created_at"] = time.monotonic()
+
+        return predictions
+
+
+# --------------------------------------------------
 # HEALTH
 # --------------------------------------------------
 
@@ -386,9 +432,7 @@ def predict_all_customers(
 ):
 
     try:
-        df = get_customer_features()
-
-        predictions = make_predictions(df)
+        predictions = get_cached_predictions()
 
         if risk_level:
             allowed = {"high", "medium", "low"}
@@ -430,9 +474,7 @@ def predict_all_customers(
 def churn_summary():
 
     try:
-        df = get_customer_features()
-
-        predictions = make_predictions(df)
+        predictions = get_cached_predictions()
 
         high = sum(
             item["risk_level"] == "High"

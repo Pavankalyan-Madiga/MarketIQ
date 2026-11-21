@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI, HTTPException, Query, UploadFile, File
 from app.api.sentiment import router as sentiment_router
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,6 +9,8 @@ import io
 import re
 import uuid
 import os
+import time
+from threading import Lock
 from app.database.connection import engine, test_connection
 from app.api.churn import router as churn_router
 
@@ -42,6 +43,42 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+# ---------------------------------------------------------------------------
+# SHORT-LIVED API CACHES
+# ---------------------------------------------------------------------------
+# Each endpoint has its own lock so concurrent cache misses on different
+# dashboard endpoints do not block one another.
+DASHBOARD_CACHE_TTL = 60
+RECOMMENDATION_SCHEMA_CACHE_TTL = 300
+
+_dashboard_stats_cache = {"data": None, "created_at": 0}
+_dashboard_revenue_cache = {"data": None, "created_at": 0}
+_dashboard_segments_cache = {"data": None, "created_at": 0}
+
+_dashboard_stats_lock = Lock()
+_dashboard_revenue_lock = Lock()
+_dashboard_segments_lock = Lock()
+
+_recommendation_schema_cache = {"data": None, "created_at": 0}
+_recommendation_schema_lock = Lock()
+
+
+def get_cached_value(cache, cache_lock, ttl, loader):
+    """Return a cached value or load and cache it safely."""
+    with cache_lock:
+        now = time.monotonic()
+        if (
+            cache["data"] is not None
+            and now - cache["created_at"] < ttl
+        ):
+            return cache["data"]
+
+        value = loader()
+        cache["data"] = value
+        cache["created_at"] = time.monotonic()
+        return value
+
 @app.get("/")
 def home():
     return {
@@ -69,27 +106,18 @@ def health():
 
 @app.get("/api/v1/dashboard/stats")
 def dashboard_stats():
-    try:
+    def load_stats():
         with engine.connect() as connection:
             result = connection.execute(text("""
                 SELECT
                     (
-                        SELECT COALESCE(
-                            SUM(oi.total_price::NUMERIC), 0
-                        )
+                        SELECT COALESCE(SUM(oi.total_price::NUMERIC), 0)
                         FROM order_items oi
-                        JOIN orders o
-                            ON o.order_id = oi.order_id
+                        JOIN orders o ON o.order_id = oi.order_id
                         WHERE o.status = 'Delivered'
                     ) AS total_revenue,
-                    (
-                        SELECT COUNT(*)
-                        FROM customers
-                    ) AS total_customers,
-                    (
-                        SELECT COUNT(*)
-                        FROM orders
-                    ) AS total_orders,
+                    (SELECT COUNT(*) FROM customers) AS total_customers,
+                    (SELECT COUNT(*) FROM orders) AS total_orders,
                     (
                         SELECT COUNT(*)
                         FROM customers
@@ -106,16 +134,20 @@ def dashboard_stats():
             "currency": "INR",
         }
 
-    except Exception as exc:
-        raise HTTPException(
-            status_code=500,
-            detail=str(exc),
+    try:
+        return get_cached_value(
+            _dashboard_stats_cache,
+            _dashboard_stats_lock,
+            DASHBOARD_CACHE_TTL,
+            load_stats,
         )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
 @app.get("/api/v1/dashboard/revenue")
 def dashboard_revenue():
-    try:
+    def load_revenue():
         with engine.connect() as connection:
             rows = connection.execute(text("""
                 SELECT
@@ -132,15 +164,11 @@ def dashboard_revenue():
                         0
                     ) AS revenue
                 FROM orders o
-                JOIN order_items oi
-                    ON oi.order_id = o.order_id
+                JOIN order_items oi ON oi.order_id = o.order_id
                 WHERE o.status = 'Delivered'
                   AND o.order_date::DATE >=
                       CURRENT_DATE - INTERVAL '12 months'
-                GROUP BY DATE_TRUNC(
-                    'month',
-                    o.order_date::DATE
-                )
+                GROUP BY DATE_TRUNC('month', o.order_date::DATE)
                 ORDER BY month_date
             """)).mappings().all()
 
@@ -152,24 +180,26 @@ def dashboard_revenue():
             for row in rows
         ]
 
-    except Exception as exc:
-        raise HTTPException(
-            status_code=500,
-            detail=str(exc),
+    try:
+        return get_cached_value(
+            _dashboard_revenue_cache,
+            _dashboard_revenue_lock,
+            DASHBOARD_CACHE_TTL,
+            load_revenue,
         )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
 @app.get("/api/v1/dashboard/segments")
 def dashboard_segments():
-    try:
+    def load_segments():
         with engine.connect() as connection:
             rows = connection.execute(text("""
                 SELECT
                     CASE
-                        WHEN order_count >= 5
-                            THEN 'Frequent Buyers'
-                        WHEN order_count BETWEEN 2 AND 4
-                            THEN 'Returning Buyers'
+                        WHEN order_count >= 5 THEN 'Frequent Buyers'
+                        WHEN order_count BETWEEN 2 AND 4 THEN 'Returning Buyers'
                         ELSE 'One-time Buyers'
                     END AS name,
                     COUNT(*) AS value
@@ -195,11 +225,15 @@ def dashboard_segments():
             for row in rows
         ]
 
-    except Exception as exc:
-        raise HTTPException(
-            status_code=500,
-            detail=str(exc),
+    try:
+        return get_cached_value(
+            _dashboard_segments_cache,
+            _dashboard_segments_lock,
+            DASHBOARD_CACHE_TTL,
+            load_segments,
         )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
 @app.get("/api/v1/customers")
@@ -208,61 +242,73 @@ def get_customers(
     page: int = Query(default=1, ge=1),
     page_size: int = Query(default=10, ge=1, le=100),
 ):
+    """Return a paginated customer list, cached briefly by its filters."""
     try:
-        offset = (page - 1) * page_size
-        search_pattern = f"%{search.strip()}%"
+        normalized_search = search.strip()
+        cache_key = (normalized_search.casefold(), page, page_size)
 
-        with engine.connect() as connection:
-            total = connection.execute(
-                text("""
-                    SELECT COUNT(*)
-                    FROM customers
-                    WHERE
-                        name ILIKE :search
-                        OR email ILIKE :search
-                        OR city ILIKE :search
-                """),
-                {"search": search_pattern},
-            ).scalar_one()
+        def load_customers():
+            offset = (page - 1) * page_size
+            search_pattern = f"%{normalized_search}%"
 
-            rows = connection.execute(
-                text("""
-                    SELECT
-                        customer_id,
-                        name,
-                        age,
-                        gender,
-                        city,
-                        membership,
-                        signup_date,
-                        email
-                    FROM customers
-                    WHERE
-                        name ILIKE :search
-                        OR email ILIKE :search
-                        OR city ILIKE :search
-                    ORDER BY signup_date DESC, customer_id
-                    LIMIT :limit
-                    OFFSET :offset
-                """),
-                {
-                    "search": search_pattern,
-                    "limit": page_size,
-                    "offset": offset,
+            with engine.connect() as connection:
+                total = connection.execute(
+                    text("""
+                        SELECT COUNT(*)
+                        FROM customers
+                        WHERE
+                            name ILIKE :search
+                            OR email ILIKE :search
+                            OR city ILIKE :search
+                    """),
+                    {"search": search_pattern},
+                ).scalar_one()
+
+                rows = connection.execute(
+                    text("""
+                        SELECT
+                            customer_id,
+                            name,
+                            age,
+                            gender,
+                            city,
+                            membership,
+                            signup_date,
+                            email
+                        FROM customers
+                        WHERE
+                            name ILIKE :search
+                            OR email ILIKE :search
+                            OR city ILIKE :search
+                        ORDER BY signup_date DESC, customer_id
+                        LIMIT :limit
+                        OFFSET :offset
+                    """),
+                    {
+                        "search": search_pattern,
+                        "limit": page_size,
+                        "offset": offset,
+                    },
+                ).mappings().all()
+
+            total_pages = (total + page_size - 1) // page_size
+            return {
+                "customers": [dict(row) for row in rows],
+                "pagination": {
+                    "total": total,
+                    "page": page,
+                    "page_size": page_size,
+                    "total_pages": total_pages,
                 },
-            ).mappings().all()
+            }
 
-        total_pages = (total + page_size - 1) // page_size
-
-        return {
-            "customers": [dict(row) for row in rows],
-            "pagination": {
-                "total": total,
-                "page": page,
-                "page_size": page_size,
-                "total_pages": total_pages,
-            },
-        }
+        return get_cached_key(
+            _customers_list_cache,
+            _customers_list_cache_lock,
+            RECOMMENDATION_CACHE_TTL,
+            cache_key,
+            load_customers,
+        )
 
     except Exception as exc:
         raise HTTPException(
@@ -399,13 +445,36 @@ FROM scored
 """
 
 
-def get_rfm_records():
-    with engine.connect() as connection:
-        rows = connection.execute(
-            text(RFM_QUERY)
-        ).mappings().all()
+# Cache RFM records so summary, distribution, and customer endpoints
+# can reuse the same calculation for five minutes.
+_rfm_cache = {
+    "data": None,
+    "created_at": 0,
+}
+_rfm_cache_lock = Lock()
+RFM_CACHE_TTL = 300  # 5 minutes
 
-    return [dict(row) for row in rows]
+
+def get_rfm_records():
+    with _rfm_cache_lock:
+        current_time = time.monotonic()
+
+        if (
+            _rfm_cache["data"] is not None
+            and current_time - _rfm_cache["created_at"] < RFM_CACHE_TTL
+        ):
+            return _rfm_cache["data"]
+
+        with engine.connect() as connection:
+            rows = connection.execute(
+                text(RFM_QUERY)
+            ).mappings().all()
+
+        records = [dict(row) for row in rows]
+        _rfm_cache["data"] = records
+        _rfm_cache["created_at"] = time.monotonic()
+
+        return records
 
 
 @app.get("/api/v1/segmentation/summary")
@@ -558,87 +627,224 @@ def _first_column(columns, candidates, table_name):
 
 
 def _recommendation_schema(connection):
-    products = _table_columns(connection, "products")
-    items = _table_columns(connection, "order_items")
-    orders = _table_columns(connection, "orders")
-    product_name = _first_column(products, ("product_name", "name", "title"), "products")
-    category = next((c for c in ("category", "product_category") if c in products), None)
-    brand = next((c for c in ("brand", "manufacturer") if c in products), None)
-    quantity = next((c for c in ("quantity", "qty") if c in items), None)
-    unit_price = next((c for c in ("unit_price", "price") if c in items), None)
-    total_price = "total_price" if "total_price" in items else None
-    return {
-        "product_name": product_name,
-        "category": category,
-        "brand": brand,
-        "quantity": quantity,
-        "unit_price": unit_price,
-        "total_price": total_price,
-        "has_status": "status" in orders,
-    }
+    def load_schema():
+        products = _table_columns(connection, "products")
+        items = _table_columns(connection, "order_items")
+        orders = _table_columns(connection, "orders")
+        product_name = _first_column(
+            products, ("product_name", "name", "title"), "products"
+        )
+        category = next(
+            (c for c in ("category", "product_category") if c in products),
+            None,
+        )
+        brand = next(
+            (c for c in ("brand", "manufacturer") if c in products),
+            None,
+        )
+        quantity = next(
+            (c for c in ("quantity", "qty") if c in items),
+            None,
+        )
+        unit_price = next(
+            (c for c in ("unit_price", "price") if c in items),
+            None,
+        )
+        total_price = "total_price" if "total_price" in items else None
+
+        return {
+            "product_name": product_name,
+            "category": category,
+            "brand": brand,
+            "quantity": quantity,
+            "unit_price": unit_price,
+            "total_price": total_price,
+            "has_status": "status" in orders,
+        }
+
+    return get_cached_value(
+        _recommendation_schema_cache,
+        _recommendation_schema_lock,
+        RECOMMENDATION_SCHEMA_CACHE_TTL,
+        load_schema,
+    )
+
+
+# Cache computed recommendation results as well as schema metadata.
+# Results are short-lived because order/product data may change.
+RECOMMENDATION_CACHE_TTL = 60
+_recommendation_summary_cache = {}
+_popular_products_cache = {}
+_customer_recommendations_cache = {}
+_frequently_bought_cache = {}
+_customers_list_cache = {}
+_recommendation_summary_lock = Lock()
+_popular_products_lock = Lock()
+_customer_recommendations_lock = Lock()
+_frequently_bought_lock = Lock()
+_customers_list_cache_lock = Lock()
+
+
+def get_cached_key(cache, cache_lock, ttl, key, loader):
+    """Cache a result by request key, with a small bounded cache."""
+    with cache_lock:
+        now = time.monotonic()
+        entry = cache.get(key)
+        if entry is not None and now - entry["created_at"] < ttl:
+            return entry["data"]
+
+        value = loader()
+        # Remove expired entries and cap memory use for customer-specific keys.
+        expired = [
+            cache_key for cache_key, cached in cache.items()
+            if now - cached["created_at"] >= ttl
+        ]
+        for cache_key in expired:
+            cache.pop(cache_key, None)
+        if len(cache) >= 200:
+            oldest_key = min(cache, key=lambda item: cache[item]["created_at"])
+            cache.pop(oldest_key, None)
+        cache[key] = {"data": value, "created_at": time.monotonic()}
+        return value
+
+
+def _load_recommendation_summary():
+    with engine.connect() as connection:
+        schema = _recommendation_schema(connection)
+        status_filter = "WHERE o.status = 'Delivered'" if schema["has_status"] else ""
+        row = connection.execute(text(f"""
+            SELECT
+                COUNT(DISTINCT p.product_id) AS total_products,
+                COUNT(DISTINCT oi.order_id) AS orders_with_products,
+                COALESCE(SUM({f"NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC" if schema['quantity'] else '1'}), 0) AS units_sold
+            FROM products p
+            JOIN order_items oi ON oi.product_id = p.product_id
+            JOIN orders o ON o.order_id = oi.order_id
+            {status_filter}
+        """)).mappings().one()
+    return {key: int(value or 0) for key, value in row.items()}
 
 
 @app.get("/api/v1/recommendations/summary")
 def recommendation_summary():
     try:
-        with engine.connect() as connection:
-            schema = _recommendation_schema(connection)
-            status_filter = "WHERE o.status = 'Delivered'" if schema["has_status"] else ""
-            row = connection.execute(text(f"""
-                SELECT
-                    COUNT(DISTINCT p.product_id) AS total_products,
-                    COUNT(DISTINCT oi.order_id) AS orders_with_products,
-                    COALESCE(SUM({f"NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC" if schema['quantity'] else '1'}), 0) AS units_sold
-                FROM products p
-                JOIN order_items oi ON oi.product_id = p.product_id
-                JOIN orders o ON o.order_id = oi.order_id
-                {status_filter}
-            """)).mappings().one()
-        return {key: int(value or 0) for key, value in row.items()}
+        return get_cached_key(
+            _recommendation_summary_cache,
+            _recommendation_summary_lock,
+            RECOMMENDATION_CACHE_TTL,
+            "summary",
+            _load_recommendation_summary,
+        )
     except HTTPException:
         raise
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
+
+
+def _load_popular_products(limit: int):
+    with engine.connect() as connection:
+        schema = _recommendation_schema(connection)
+        category_select = f"p.{schema['category']}" if schema["category"] else "NULL"
+        brand_select = f"p.{schema['brand']}" if schema["brand"] else "NULL"
+        quantity_expr = f"SUM(NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC)" if schema["quantity"] else "COUNT(*)"
+        if schema["total_price"]:
+            revenue_expr = f"SUM(NULLIF(oi.{schema['total_price']}::TEXT, '')::NUMERIC)"
+        elif schema["unit_price"] and schema["quantity"]:
+            revenue_expr = f"SUM(NULLIF(oi.{schema['unit_price']}::TEXT, '')::NUMERIC * NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC)"
+        else:
+            revenue_expr = "0"
+        status_filter = "WHERE o.status = 'Delivered'" if schema["has_status"] else ""
+        rows = connection.execute(text(f"""
+            SELECT p.product_id, p.{schema['product_name']} AS product_name,
+                   {category_select} AS category, {brand_select} AS brand,
+                   COUNT(DISTINCT o.order_id) AS order_count,
+                   {quantity_expr} AS units_sold,
+                   {revenue_expr} AS revenue
+            FROM products p
+            JOIN order_items oi ON oi.product_id = p.product_id
+            JOIN orders o ON o.order_id = oi.order_id
+            {status_filter}
+            GROUP BY p.product_id, p.{schema['product_name']}
+                     {f", p.{schema['category']}" if schema['category'] else ""}
+                     {f", p.{schema['brand']}" if schema['brand'] else ""}
+            ORDER BY units_sold DESC, order_count DESC
+            LIMIT :limit
+        """), {"limit": limit}).mappings().all()
+    return [
+        {**dict(row), "units_sold": int(row["units_sold"] or 0),
+         "order_count": int(row["order_count"] or 0),
+         "revenue": float(row["revenue"] or 0)}
+        for row in rows
+    ]
 
 
 @app.get("/api/v1/recommendations/popular")
 def popular_products(limit: int = Query(default=10, ge=1, le=50)):
     try:
-        with engine.connect() as connection:
-            schema = _recommendation_schema(connection)
-            category_select = f"p.{schema['category']}" if schema["category"] else "NULL"
-            brand_select = f"p.{schema['brand']}" if schema["brand"] else "NULL"
-            quantity_expr = f"SUM(NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC)" if schema["quantity"] else "COUNT(*)"
-            if schema["total_price"]:
-                revenue_expr = f"SUM(NULLIF(oi.{schema['total_price']}::TEXT, '')::NUMERIC)"
-            elif schema["unit_price"] and schema["quantity"]:
-                revenue_expr = f"SUM(NULLIF(oi.{schema['unit_price']}::TEXT, '')::NUMERIC * NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC)"
-            else:
-                revenue_expr = "0"
-            status_filter = "WHERE o.status = 'Delivered'" if schema["has_status"] else ""
-            rows = connection.execute(text(f"""
-                SELECT p.product_id, p.{schema['product_name']} AS product_name,
-                       {category_select} AS category, {brand_select} AS brand,
-                       COUNT(DISTINCT o.order_id) AS order_count,
-                       {quantity_expr} AS units_sold,
-                       {revenue_expr} AS revenue
-                FROM products p
-                JOIN order_items oi ON oi.product_id = p.product_id
-                JOIN orders o ON o.order_id = oi.order_id
-                {status_filter}
-                GROUP BY p.product_id, p.{schema['product_name']}
-                         {f", p.{schema['category']}" if schema['category'] else ""}
-                         {f", p.{schema['brand']}" if schema['brand'] else ""}
-                ORDER BY units_sold DESC, order_count DESC
-                LIMIT :limit
-            """), {"limit": limit}).mappings().all()
-        return [{**dict(row), "units_sold": int(row["units_sold"] or 0),
-                 "order_count": int(row["order_count"] or 0),
-                 "revenue": float(row["revenue"] or 0)} for row in rows]
+        return get_cached_key(
+            _popular_products_cache, _popular_products_lock,
+            RECOMMENDATION_CACHE_TTL, limit,
+            lambda: _load_popular_products(limit),
+        )
     except HTTPException:
         raise
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
+
+
+def _load_customer_product_recommendations(customer_id: str, limit: int):
+    with engine.connect() as connection:
+        schema = _recommendation_schema(connection)
+        customer = connection.execute(text(
+            "SELECT customer_id, name FROM customers WHERE customer_id = :customer_id"
+        ), {"customer_id": customer_id}).mappings().first()
+        if not customer:
+            raise HTTPException(status_code=404, detail="Customer not found.")
+        if not schema["category"]:
+            raise HTTPException(status_code=400, detail="Product category column is required for customer-based recommendations.")
+        quantity_expr = f"SUM(NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC)" if schema["quantity"] else "COUNT(*)"
+        status_filter = "AND o.status = 'Delivered'" if schema["has_status"] else ""
+        popularity_filter = "WHERE o.status = 'Delivered'" if schema["has_status"] else ""
+        rows = connection.execute(text(f"""
+            WITH customer_categories AS (
+                SELECT p.{schema['category']} AS category, COUNT(*) AS preference
+                FROM orders o
+                JOIN order_items oi ON oi.order_id = o.order_id
+                JOIN products p ON p.product_id = oi.product_id
+                WHERE o.customer_id = :customer_id {status_filter}
+                GROUP BY p.{schema['category']}
+                ORDER BY preference DESC
+                LIMIT 3
+            ), purchased AS (
+                SELECT DISTINCT oi.product_id
+                FROM orders o JOIN order_items oi ON oi.order_id = o.order_id
+                WHERE o.customer_id = :customer_id
+            ), popularity AS (
+                SELECT oi.product_id, {quantity_expr} AS units_sold,
+                       COUNT(DISTINCT o.order_id) AS order_count
+                FROM order_items oi JOIN orders o ON o.order_id = oi.order_id
+                {popularity_filter}
+                GROUP BY oi.product_id
+            )
+            SELECT p.product_id, p.{schema['product_name']} AS product_name,
+                   p.{schema['category']} AS category,
+                   pop.units_sold, pop.order_count
+            FROM products p
+            JOIN customer_categories cc ON cc.category = p.{schema['category']}
+            JOIN popularity pop ON pop.product_id = p.product_id
+            WHERE p.product_id NOT IN (SELECT product_id FROM purchased)
+            ORDER BY cc.preference DESC, pop.units_sold DESC
+            LIMIT :limit
+        """), {"customer_id": customer_id, "limit": limit}).mappings().all()
+    return {
+        "customer": dict(customer),
+        "recommendations": [
+            {**dict(row), "units_sold": int(row["units_sold"] or 0),
+             "order_count": int(row["order_count"] or 0)}
+            for row in rows
+        ],
+        "method": "Purchase-category preference + product popularity (rule-based)",
+    }
 
 
 @app.get("/api/v1/recommendations/customer/{customer_id}")
@@ -649,86 +855,55 @@ def customer_product_recommendations(
     """Recommend popular products in the customer's preferred categories,
     excluding products already purchased by that customer."""
     try:
-        with engine.connect() as connection:
-            schema = _recommendation_schema(connection)
-            customer = connection.execute(text(
-                "SELECT customer_id, name FROM customers WHERE customer_id = :customer_id"
-            ), {"customer_id": customer_id}).mappings().first()
-            if not customer:
-                raise HTTPException(status_code=404, detail="Customer not found.")
-            if not schema["category"]:
-                raise HTTPException(status_code=400, detail="Product category column is required for customer-based recommendations.")
-            quantity_expr = f"SUM(NULLIF(oi.{schema['quantity']}::TEXT, '')::NUMERIC)" if schema["quantity"] else "COUNT(*)"
-            status_filter = "AND o.status = 'Delivered'" if schema["has_status"] else ""
-            popularity_filter = "WHERE o.status = 'Delivered'" if schema["has_status"] else ""
-            rows = connection.execute(text(f"""
-                WITH customer_categories AS (
-                    SELECT p.{schema['category']} AS category, COUNT(*) AS preference
-                    FROM orders o
-                    JOIN order_items oi ON oi.order_id = o.order_id
-                    JOIN products p ON p.product_id = oi.product_id
-                    WHERE o.customer_id = :customer_id {status_filter}
-                    GROUP BY p.{schema['category']}
-                    ORDER BY preference DESC
-                    LIMIT 3
-                ), purchased AS (
-                    SELECT DISTINCT oi.product_id
-                    FROM orders o JOIN order_items oi ON oi.order_id = o.order_id
-                    WHERE o.customer_id = :customer_id
-                ), popularity AS (
-                    SELECT oi.product_id, {quantity_expr} AS units_sold,
-                           COUNT(DISTINCT o.order_id) AS order_count
-                    FROM order_items oi JOIN orders o ON o.order_id = oi.order_id
-                    {popularity_filter}
-                    GROUP BY oi.product_id
-                )
-                SELECT p.product_id, p.{schema['product_name']} AS product_name,
-                       p.{schema['category']} AS category,
-                       pop.units_sold, pop.order_count
-                FROM products p
-                JOIN customer_categories cc ON cc.category = p.{schema['category']}
-                JOIN popularity pop ON pop.product_id = p.product_id
-                WHERE p.product_id NOT IN (SELECT product_id FROM purchased)
-                ORDER BY cc.preference DESC, pop.units_sold DESC
-                LIMIT :limit
-            """), {"customer_id": customer_id, "limit": limit}).mappings().all()
-        return {"customer": dict(customer), "recommendations": [
-            {**dict(row), "units_sold": int(row["units_sold"] or 0),
-             "order_count": int(row["order_count"] or 0)} for row in rows
-        ], "method": "Purchase-category preference + product popularity (rule-based)"}
+        return get_cached_key(
+            _customer_recommendations_cache, _customer_recommendations_lock,
+            RECOMMENDATION_CACHE_TTL, (customer_id, limit),
+            lambda: _load_customer_product_recommendations(customer_id, limit),
+        )
     except HTTPException:
         raise
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
 
 
+def _load_frequently_bought_together(limit: int):
+    with engine.connect() as connection:
+        schema = _recommendation_schema(connection)
+        status_filter = "AND o.status = 'Delivered'" if schema["has_status"] else ""
+        rows = connection.execute(text(f"""
+            SELECT
+                p1.product_id AS product_id_1,
+                p1.{schema['product_name']} AS product_name_1,
+                p2.product_id AS product_id_2,
+                p2.{schema['product_name']} AS product_name_2,
+                COUNT(DISTINCT oi1.order_id) AS together_count
+            FROM order_items oi1
+            JOIN order_items oi2
+              ON oi1.order_id = oi2.order_id
+             AND oi1.product_id < oi2.product_id
+            JOIN orders o ON o.order_id = oi1.order_id
+            JOIN products p1 ON p1.product_id = oi1.product_id
+            JOIN products p2 ON p2.product_id = oi2.product_id
+            WHERE 1=1 {status_filter}
+            GROUP BY p1.product_id, p1.{schema['product_name']},
+                     p2.product_id, p2.{schema['product_name']}
+            ORDER BY together_count DESC
+            LIMIT :limit
+        """), {"limit": limit}).mappings().all()
+    return [
+        {**dict(row), "together_count": int(row["together_count"] or 0)}
+        for row in rows
+    ]
+
+
 @app.get("/api/v1/recommendations/frequently-bought-together")
 def frequently_bought_together(limit: int = Query(default=10, ge=1, le=50)):
     try:
-        with engine.connect() as connection:
-            schema = _recommendation_schema(connection)
-            status_filter = "AND o.status = 'Delivered'" if schema["has_status"] else ""
-            rows = connection.execute(text(f"""
-                SELECT
-                    p1.product_id AS product_id_1,
-                    p1.{schema['product_name']} AS product_name_1,
-                    p2.product_id AS product_id_2,
-                    p2.{schema['product_name']} AS product_name_2,
-                    COUNT(DISTINCT oi1.order_id) AS together_count
-                FROM order_items oi1
-                JOIN order_items oi2
-                  ON oi1.order_id = oi2.order_id
-                 AND oi1.product_id < oi2.product_id
-                JOIN orders o ON o.order_id = oi1.order_id
-                JOIN products p1 ON p1.product_id = oi1.product_id
-                JOIN products p2 ON p2.product_id = oi2.product_id
-                WHERE 1=1 {status_filter}
-                GROUP BY p1.product_id, p1.{schema['product_name']},
-                         p2.product_id, p2.{schema['product_name']}
-                ORDER BY together_count DESC
-                LIMIT :limit
-            """), {"limit": limit}).mappings().all()
-        return [{**dict(row), "together_count": int(row["together_count"] or 0)} for row in rows]
+        return get_cached_key(
+            _frequently_bought_cache, _frequently_bought_lock,
+            RECOMMENDATION_CACHE_TTL, limit,
+            lambda: _load_frequently_bought_together(limit),
+        )
     except HTTPException:
         raise
     except Exception as exc:
@@ -742,6 +917,18 @@ def frequently_bought_together(limit: int = Query(default=10, ge=1, le=50)):
 
 MAX_DATASET_SIZE = 20 * 1024 * 1024  # 20 MB
 DATASET_UPLOAD_DIR = Path(__file__).resolve().parent.parent / "uploads"
+
+# Cache the aggregate quality report briefly so CSV files are not revalidated
+# on every dashboard request. Upload/delete operations invalidate this cache.
+_dataset_quality_cache = {"data": None, "created_at": 0}
+_dataset_quality_cache_lock = Lock()
+DATASET_QUALITY_CACHE_TTL = 60
+
+
+def invalidate_dataset_quality_cache():
+    with _dataset_quality_cache_lock:
+        _dataset_quality_cache["data"] = None
+        _dataset_quality_cache["created_at"] = 0
 
 
 def ensure_dataset_registry():
@@ -914,6 +1101,8 @@ async def upload_dataset(file: UploadFile = File(...)):
                     "file_size": len(content),
                 },
             )
+
+        invalidate_dataset_quality_cache()
     except Exception as exc:
         stored_path.unlink(missing_ok=True)
         raise HTTPException(
@@ -1000,6 +1189,8 @@ def delete_dataset(dataset_id: str):
                 text("DELETE FROM dataset_registry WHERE dataset_id = :dataset_id"),
                 {"dataset_id": dataset_id},
             )
+
+        invalidate_dataset_quality_cache()
 
         return {
             "message": "Dataset deleted successfully.",
@@ -1172,8 +1363,7 @@ def validate_dataset(dataset_id: str):
         raise HTTPException(status_code=500, detail=str(exc))
 
 
-@app.get("/api/v1/datasets/quality/overview")
-def dataset_quality_overview():
+def build_dataset_quality_overview():
     """
     Return aggregate quality metrics for all uploaded datasets.
     Each dataset is revalidated from its stored CSV when this endpoint runs.
@@ -1287,3 +1477,22 @@ def dataset_quality_overview():
         if isinstance(exc, HTTPException):
             raise
         raise HTTPException(status_code=500, detail=str(exc))
+
+
+@app.get("/api/v1/datasets/quality/overview")
+def dataset_quality_overview():
+    """Return the aggregate dataset-quality report, cached for 60 seconds."""
+    with _dataset_quality_cache_lock:
+        current_time = time.monotonic()
+
+        if (
+            _dataset_quality_cache["data"] is not None
+            and current_time - _dataset_quality_cache["created_at"]
+            < DATASET_QUALITY_CACHE_TTL
+        ):
+            return _dataset_quality_cache["data"]
+
+        result = build_dataset_quality_overview()
+        _dataset_quality_cache["data"] = result
+        _dataset_quality_cache["created_at"] = time.monotonic()
+        return result
